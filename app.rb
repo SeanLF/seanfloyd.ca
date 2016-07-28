@@ -5,13 +5,13 @@ get '/' do
   erb :index
 end
 
-get '/resume' do
-  @stylesheet_name = 'resume'
-  erb :resume
+get '/cv' do
+  @stylesheet_name = 'cv'
+  erb :cv
 end
 
 get '/email' do
-  redirect 'mailto:sfloy029@uottawa.ca'
+  redirect 'mailto:seanlouisfloyd@gmail.com'
 end
 
 get '/presentation' do
