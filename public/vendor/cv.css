@@ -170,3 +170,13 @@ a:hover {
 .res-label {
     font-style: italic
 }
+
+@media print {
+  body {
+    background-color: white;
+  }
+
+  #main {
+    border: 0px;
+  }
+}

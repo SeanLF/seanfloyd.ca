@@ -7,6 +7,7 @@ end
 
 get '/cv' do
   @stylesheet_name = 'cv'
+  @show_contact_details = params[:info] == 'show'
   erb :cv
 end
 
