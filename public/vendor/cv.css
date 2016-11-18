@@ -177,6 +177,22 @@ a:hover {
   }
 
   #main {
-    border: 0px;
+    border: 0px !important;
   }
+}
+
+.chip {
+    background-color: #eee;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    margin: 0.3rem;
+}
+
+.languages {
+    font-family: monospace;
+    margin: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-flow: row wrap;
+
 }
