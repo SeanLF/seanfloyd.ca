@@ -37,17 +37,9 @@ body {
     border: 1px solid #E6E6E6
 }
 
-body.pdf>#main {
-    border: none
-}
-
 #container>header {
     padding-top: 6em;
     padding-bottom: 1em
-}
-
-body.pdf #container>header {
-    padding: 0
 }
 
 #main>#container>section {
@@ -101,38 +93,6 @@ a:hover {
     text-decoration: underline
 }
 
-.defunct {
-    color: #989898;
-    font-weight: 700
-}
-
-#summary>p>strong {
-    font-size: 1.25em
-}
-
-.label-keyword {
-    display: inline-block;
-    background: #7eb0db;
-    color: #fff;
-    font-size: .9em;
-    padding: 5px;
-    border: 1px solid #357ebd;
-    border-radius: 5px;
-    margin-top: 2px
-}
-
-.card-nested {
-    min-height: 0;
-    margin-bottom: 10px;
-    border-width: 1px 0 0
-}
-
-.card {
-    background: #FFF;
-    border-radius: 3px;
-    padding: 10px
-}
-
 @media (max-width:480px) {
     #main>#container>section {
       margin-left: 0;
@@ -147,28 +107,9 @@ a:hover {
     list-style: none
 }
 
-.card-skills {
-    position: relative
-}
-
-.space-top {
-    margin-top: 10px
-}
-
 #container {
     max-width: 800px;
     margin: 0 auto
-}
-
-#elevator-pitch {
-    text-align: center;
-    font-size: 24px;
-    color: #BFC1C3;
-    font-weight: 400
-}
-
-.res-label {
-    font-style: italic
 }
 
 @media print {

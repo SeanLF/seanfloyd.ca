@@ -139,10 +139,6 @@ ul {
     align-items: baseline;
 }
 
-.timeline-block.centered {
-  padding-left: 2rem;
-}
-
 .details {
   padding: 1rem;
   font-size: 0.5rem;
