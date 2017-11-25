@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    daemons (1.2.4)
+    daemons (1.2.5)
     eventmachine (1.2.5)
     mustermann (1.0.1)
     rack (2.0.3)
