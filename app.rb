@@ -16,5 +16,5 @@ get '/email' do
 end
 
 get '/presentation' do
-  redirect 'https://docs.google.com/presentation/d/1Tk-oOIYUSd5ymtbCGueIWVCggXpir7n7jOVZqS5tnoE/edit?usp=sharing'
+  redirect 'https://docs.google.com/presentation/d/1asvukkEOvBwGBpO9RcsLfc6NlWoKXF0Uzvvrf59KiO4/edit?usp=sharing'
 end
