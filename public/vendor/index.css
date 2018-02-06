@@ -1,5 +1,5 @@
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   color: rgba(0,0,0,.54);
   background-color: #2196F3;
 }
@@ -99,6 +99,9 @@ a:active {
   background-color: rgba(158,158,158,.4);
 }
 
+a.nothing {
+  color: black;
+}
 
 /* Timeline */
 #timeline {
