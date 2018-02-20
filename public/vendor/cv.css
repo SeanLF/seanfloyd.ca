@@ -127,6 +127,7 @@ a:hover {
     padding: 0.2rem 0.8rem;
     border-radius: 12px;
     margin: 0.3rem;
+    border: 0.5px solid #eee
 }
 
 .languages {
