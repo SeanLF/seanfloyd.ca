@@ -34,7 +34,7 @@ body{
 }
 
 .image {
-  background-image: url('/vendor/seanfloyd.jpeg');
+  background-image: url('/vendor/seanfloyd.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   filter: contrast(0.8);
