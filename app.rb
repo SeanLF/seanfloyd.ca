@@ -14,3 +14,7 @@ end
 get '/email' do
   redirect 'mailto:seanlouisfloyd@gmail.com'
 end
+
+get '/emergency' do
+  erb :emergency
+end
