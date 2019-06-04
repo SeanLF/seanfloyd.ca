@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    machine:
+      enabled: true
+    working_directory: ~/seanfloyd.ca
+    steps:
+      - checkout
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "b1:e6:4b:ef:3e:02:ae:c0:7a:06:b7:5c:5d:e6:23:6a"
+      - run:
+          name: Deploy to Dokku
+          command: |
+            ssh-keyscan -H seanfloyd.ca >> ~/.ssh/known_hosts
+            git remote add dokku dokku@seanfloyd.ca:seanfloyd.ca
+            git push -f dokku master
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

@@ -1,0 +1,31 @@
+body{
+  font-family: Monaco, Menlo, Courier, serif;
+  color: rgba(0,0,0,.5);
+  background-color: #f0f0f0;
+}
+
+main {
+  background-color: #FFF;
+  display: block;
+  margin: 1rem auto;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
+  max-width: 900px;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto
+}
+
+
+a,
+a:visited {
+    color: #428BCA;
+    text-decoration: none;
+    font-weight: 700
+}
+
+a:hover {
+    text-decoration: underline
+}
