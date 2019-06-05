@@ -2,6 +2,7 @@ require 'sinatra'
 require 'date'
 require 'kramdown'
 require 'active_support/core_ext/integer/inflections'
+require 'builder'
 
 TRAVEL_POSTS_FOLDER = '/travel/posts'
 
@@ -25,6 +26,11 @@ end
 get '/travel/posts/*' do
   @stylesheet_name = 'travel_post'
   erb :travel_post, :locals => { :content => markdown("#{TRAVEL_POSTS_FOLDER}/#{params['splat'][0]}".to_sym) }
+end
+
+get '/travel/rss' do
+  @posts = generate_posts
+  builder :rss
 end
 
 get '/email' do
@@ -67,7 +73,7 @@ def generate_posts
       end
     end
     
-    post = {title: title, excerpt: excerpt, date: format_date_md_ordinalize(date), url: travel_post_url(date)}
+    post = {title: title, excerpt: excerpt, date: date, formatted_date: format_date_md_ordinalize(date), url: travel_post_url(date)}
     @posts << post
   end
 

@@ -1,4 +1,5 @@
 <h1><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>&nbsp;|&nbsp;Travel Log</h1>
+<h6><a href="/travel/rss"><i class="fa fa-rss" aria-hidden="true"></i>&nbsp;RSS Feed</a>&nbsp;(to subscribe, you need an RSS reader)</h6>
 <div class="landing">
 <% for post in @posts %>
 <div class="card">
@@ -6,7 +7,7 @@
     <span class="empty-flex-grow"></span>
     <span class="name" id="<%= post[:title] %>"><%= post[:title] %></span>
   </div>
-  <div class="date"><span class="fa fa-clock-o"></span>&nbsp;<span><%= post[:date] %></span></div>
+  <div class="date"><span class="fa fa-clock-o"></span>&nbsp;<span><%= post[:formatted_date] %></span></div>
   <div class="text">
     <p>
       <%= post[:excerpt] %>
