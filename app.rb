@@ -28,7 +28,7 @@ get '/travel/posts/*' do
   erb :travel_post, :locals => { :content => markdown("#{TRAVEL_POSTS_FOLDER}/#{params['splat'][0]}".to_sym) }
 end
 
-get '/travel/rss' do
+get '/travel.rss' do
   @posts = generate_posts
   builder :rss
 end
