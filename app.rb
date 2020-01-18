@@ -67,7 +67,7 @@ def generate_posts
     title = content[0].delete_prefix("# ").strip
     date = Date.parse(get_date_from_file(file))
     for line in content.drop(1)
-      unless line.to_s.strip.empty?
+      unless line.to_s.gsub(/^===/, "").strip.empty?
         excerpt = line[0, 100].strip + '...'
         break
       end
