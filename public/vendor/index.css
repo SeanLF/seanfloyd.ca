@@ -44,19 +44,19 @@ body{
 }
 
 .image {
-  background-image: url('/vendor/seanfloyd.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: contrast(0.8);
+  filter: contrast(0.89);
+  object-fit: cover;
   display: flex;
   flex-flow: column nowrap;
-  padding: 1rem;
   height: 13rem;
 }
 
 .image .name {
   color: #fff;
   font-size: 1.3rem;
+  position: relative;
+  bottom: 2rem;
+  left: 1rem;
 }
 
 .empty-flex-grow {
