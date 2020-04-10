@@ -6,7 +6,7 @@ html{
 
 body{
   font-family: sans-serif;
-  color: rgba(0,0,0,.54);
+  color: rgba(0,0,0,.74);
   background-color: #fff;
 }
 
@@ -37,6 +37,10 @@ body{
   background: var(--primary);
   padding: 1rem;
   color: white;
+}
+
+.card .header a {
+  color: orange;
 }
 
 .image {
@@ -89,6 +93,10 @@ body{
   text-transform: uppercase;
 }
 
+.actions a span.show-icon-only {
+  display: none;
+}
+
 a, a:visited {
   text-decoration: none;
   color: var(--primary);
@@ -103,10 +111,6 @@ a:active {
   box-shadow: 0 0 2px rgba(0,0,0,.18),0 2px 1px rgba(0,0,0,.09);
   transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
   background-color: rgba(158,158,158,.4);
-}
-
-a.nothing {
-  color: orange;
 }
 
 /* Timeline */
@@ -130,7 +134,7 @@ ul {
     content: '';
     position: absolute;
     top: 1rem;
-    height: 92%;
+    height: 93%;
     width: 4px;
     background: var(--primary);
     z-index: -1;
