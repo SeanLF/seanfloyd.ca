@@ -10,7 +10,7 @@
   <div class="date"><span class="fa fa-clock-o"></span>&nbsp;<span><%= post[:formatted_date] %></span></div>
   <div class="text">
     <p>
-      <%= post[:excerpt] %>
+      <%= markdown(post[:excerpt]) %>
     </p>
   </div>
   <div class="actions">

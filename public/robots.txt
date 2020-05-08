@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /resume
 Disallow: /email
 Disallow: /cv
+Disallow: /travel
