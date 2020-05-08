@@ -1,15 +1,38 @@
+html{
+  --primary: hsl(217, 71%, 53%);
+  --primary-light: hsla(217, 71%, 53%, 0.14);
+  --background: hsl(0, 0%, 96%);
+  --border-color: #E6E6E6;
+  --background-card: hsl(0, 0%, 100%);
+  --text-color-dark: hsl(0, 0%, 21%);
+  --text-color-light: hsl(0, 0%, 96%);
+  --box-shadow-a: rgba(0,0,0,0.19);
+  --box-shadow-b: rgba(0,0,0,0.23);
+  --secondary:  hsl(48, 100%, 67%) ;
+}
+
+@media (prefers-color-scheme: dark) {
+  html{
+    --background-card: #1d1d1d;
+    --background: #121212;
+    --border-color: var(--background);
+    --text-color-dark: hsl(0, 0%, 89%);
+    --text-color-light: hsl(0, 0%, 21%);
+  }
+}
+
 body{
-  font-family: Monaco, Menlo, Courier, serif;
-  color: rgba(0,0,0,.5);
-  background-color: #f0f0f0;
+  font-family: sans-serif;
+  color: var(--text-color-dark);
+  background-color: var(--background);
 }
 
 main {
-  background-color: #FFF;
+  background-color: var(--background-card);
   display: block;
   margin: 1rem auto;
-  padding: 10px;
-  border: 1px solid #E6E6E6;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
   max-width: 900px;
 }
 
@@ -24,7 +47,7 @@ img{
 
 a,
 a:visited {
-    color: #428BCA;
+    color: var(--primary);
     text-decoration: none;
     font-weight: 700
 }
