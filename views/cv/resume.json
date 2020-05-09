@@ -1,0 +1,305 @@
+{
+  "basics": {
+    "name": "Sean Floyd",
+    "label": "Recent Graduate seeking employment",
+    "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
+    "email": "seanfloyd@icloud.com",
+    "phone": "+1 (343) 882-4123",
+    "altPhone": "+33 (0)7 66 44 70 46",
+    "website": "https://seanfloyd.ca",
+    "location": {
+      "address": "302-287 Metcalfe Street",
+      "postalCode": "K2P 0L9",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "countryCode": "CA"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "SeanLF",
+        "url": "https://github.com/SeanLF"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "floydsean",
+        "url": "https://ca.linkedin.com/in/floydsean"
+      },
+      {
+        "network": "StackOverflow",
+        "username": "seanfloyd",
+        "url": "https://stackoverflow.com/story/seanfloyd"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "University of Ottawa",
+      "position": "Corrector",
+      "website": "https://uottawa.ca",
+      "startDate": "2018-01-01",
+      "endDate": "2018-04-30",
+      "summary": "Corrector for the 4th year undergraduate Introduction to Data Science course (CSI 4142).",
+      "highlights": [
+        "Correcting assignments, midterm and final project.",
+        "Presenting a lecture on the entire lifecycle (data → data cube → data mining)."
+      ],
+      "keywords": [
+        "Big Data","Analytics","Cloud Computing","Data Preperation","Data Mining","Model Evaluation","Data Warehouse","Data Visualization"
+      ]
+    },
+    {
+      "company": "D3M Networks | Teldio",
+      "position": "Software Engineer",
+      "website": "http://www.d3mnetworks.com/",
+      "startDate": "2016-05-01",
+      "endDate": "2016-08-30",
+      "summary": "Developed new features, maintained code, fixed bugs, participated in code review and quality assurance testing.",
+      "highlights": [
+        "Designed, architected and developed a proof of concept for a new core feature, allowing users to manage their network connections from within a diagram, and a projects' bill of materials.",
+        "Increased developer productivity by streamlining the code review process.",
+        "Improved performance and response time by up to 50% after discovering and fixing numerous N+1 queries."
+      ],
+      "keywords": [
+        "Ruby","Rails","JavaScript","SQL","SCSS","Git","Marionette"
+      ]
+    },
+    {
+      "company": "House of Commons Canada",
+      "position": "Software Engineer",
+      "website": "https://parl.ca",
+      "startDate": "2015-09-01",
+      "endDate": "2015-12-15",
+      "summary": "Designed, architected, and developed a web service to integrate with the parliament's financial system as well as an interactive phishing quiz.",
+      "highlights": [
+        "Designed, developed and documented a web service, database, and dashboard for monitoring logs of the in-house financial system.",
+        "Designed, architected and developed a single page application for cyber-security awereness month."
+      ],
+      "keywords": [
+        "VB.NET","SQL","JavaScript","CSS", "knockout.js", "Bootstrap","IIS"
+      ]
+    },
+    {
+      "company": "etixnow",
+      "position": "Contractor",
+      "website": "https://etixnow.com",
+      "startDate": "2015-07-15",
+      "endDate": "2015-08-30",
+      "summary": "Developed an administration panel for low memory linux touchscreen Point Of Sale mini kiosks, that runs in custom-built WebKit QT browser.",
+      "highlights": [
+        "Kiosks were used in brick-and-mortar stores to sell tickets to events including the Ottawa Jazz Festival, for which attendance averages around 300 000."
+      ],
+      "keywords": [
+        "HTML","JavaScript","CSS","QT browser","Linux"
+      ]
+    },
+    {
+      "company": "Patented Medicine Prices Review Board",
+      "position": "Programmer Analyst",
+      "website": "https://www.canada.ca/en/patented-medicine-prices-review.html",
+      "startDate": "2014-05-01",
+      "endDate": "2015-04-30",
+      "summary": "Improved and maintained a .NET web application.",
+      "highlights": [
+        "Single-handedly maintained the core reviewing tool for 6 weeks.",
+        "Discovered and co-fixed issues in production data that could have led to legal liabilities for employer.",
+        "Refactored a report and achieved over 50% speedup in part due to better SQL queries.",
+        "Resolved 85% of bugs and features in the product backlog."
+      ],
+      "keywords": [
+        "C#","JavaScript","CSS","SQL","TFS"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Ottawa Jazz Festival",
+      "position": "Volunteer",
+      "website": "http://ottawajazzfestival.com",
+      "startDate": "2009-06-20",
+      "endDate": "9999-01-01",
+      "summary": "Volunteered over the years as a developer, ticket scanning supervisor, barback, cashier, and bartender",
+      "highlights": [
+        "Created a website to allow new volunteers to sign up.",
+        "Optimizing the gate setup for ticket scanning, closing the park, scanning troubleshooting, and ensuring customer satisfaction.",
+        "Worked in the VIP tent. Duties included: barback, bartender, admissions, cashier, setting up tent space."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Ottawa",
+      "website": "https://uottawa.ca",
+      "area": "Computer Science",
+      "studyType": "M.Sc.",
+      "startDate": "2016-01-01",
+      "endDate": "2019-06-13",
+      "gpa": "9.8/10 (3.98/4)",
+      "courses": [
+        "Data Mining and Concept Learning",
+        "Distributed Databases and Transaction Processing",
+        "Database Analysis and Design",
+        "Principles of Distributed Computing"
+      ],
+      "summary": "Thesis-based masters, admitted with a total of $35k in scholarships and grants. Published a thesis and two papers."
+    },
+    {
+      "institution": "University of Ottawa",
+      "website": "https://uottawa.ca",
+      "area": "Computer Science",
+      "studyType": "Honours B.Sc. (co-op)",
+      "startDate": "2012-09-01",
+      "endDate": "2015-12-20",
+      "gpa": "8.4 (3.78/4)",
+      "courses": [
+        "Information Retrieval and the Internet",
+        "Introduction to Artificial Intelligence",
+        "Methods in Image Processing",
+        "Real-Time Systems Design"
+      ],
+      "summary": "Took part in the co-operative education program, leading to 4 four-month internships over the course of the diploma."
+    },
+    {
+      "institution": "Académie de Caen",
+      "website": "https://www.ac-caen.fr",
+      "area": "série scientifique",
+      "studyType": "Baccalauréat Général",
+      "startDate": "2010-09-01",
+      "endDate": "2012-06-10",
+      "gpa": "",
+      "courses": [],
+      "summary": "Obtained the French Baccalaureate in the scientific section with a specialization in Mathematics from the French Academy of Caen. Attended high school at the Lycée Claudel in Ottawa."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Soft Voting Windowing Ensembles for Learning from Partially Labelled Streams",
+      "publisher": "ECML PKDD nfCMP",
+      "releaseDate": "2020-06-01",
+      "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
+      "summary": "Short-form paper from thesis research, showcased at the ECML PKDD nfCMP 2019 workshop."
+    },
+    {
+      "name": "Semi-Supervised Hybrid Windowing Ensembles for Learning from Evolving Streams",
+      "publisher": "Thesis",
+      "releaseDate": "2019-06-10",
+      "website": "https://ruor.uottawa.ca/handle/10393/39273",
+      "summary": "Developed an ensemble machine-learning algorithm that was roughly 160 times faster than current state of the art techniques, and achieved comparable predictive accuracy. Contributions include:",
+      "highlights":[
+        "a novel windowing approach for ensembles",
+        "extending a drift detector to work without any labelled data",
+        "a weighted soft voting scheme for ensembles",
+        "and investigating the limits of non-selective self-training."
+      ],
+      "keywords": [
+        "Python","Ruby","Data Mining","Data Streams"
+      ]
+    },
+    {
+      "name": "An Exploratory Study of Oral and Dental Health in Canada",
+      "publisher": "IEEE ICMLA",
+      "releaseDate": "2017-12-18",
+      "website": "https://ieeexplore.ieee.org/document/8260794/",
+      "summary": "Published a paper at the ICMLA 2017 conference with 2 other students, under the supervision of Dr. Herna Viktor. This paper is the result of a graduate level directed studies course on data warehousing.",
+      "highlights": [
+        "Acquired data from the Canadian Community Health Survey provided by Statistics Canada.",
+        "Used R, Python and Microsoft's ETL suite to build a data cube according to Kimball's data warehouse lifecycle framework.",
+        "Performed an exploratory analysis of the data using WEKA's data mining tools.",
+        "Presented our work, results and findings at the end of the semester in a presentation and report."
+      ],
+      "keywords": [
+        "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Jazzify",
+      "position": "Creator",
+      "website": "https://jazzify.ca",
+      "startDate": "2015-01-01",
+      "endDate": "9999-01-01",
+      "summary": "Created a website to allow new volunteers to sign up.",
+      "highlights": [
+        "Used for five consecutive years to recruit new volunteers.",
+        "Thousands of sign ups."
+      ],
+      "keywords": [
+        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","Continuous Integration","RSpec"
+      ]
+    },
+    {
+      "name": "Personal website",
+      "position": "Creator",
+      "website": "https://seanfloyd.ca",
+      "startDate": "2016-03-30",
+      "endDate": "9999-01-01",
+      "summary": "Personal website to publish my CV and travel blog.",
+      "highlights": [],
+      "keywords": [
+        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","Continuous Integration","Continuous Delivery","Git","JSON","Linux"
+      ]
+    },
+    {
+      "name": "An Active Learning System for Text Classification",
+      "position": "Team Lead",
+      "website": "https://github.com/SeanLF/CSI4900",
+      "startDate": "2016-10-01",
+      "endDate": "2016-12-10",
+      "summary": "Implemented a proof-of-concept for an online active-learner to handle text-classification for the undergraduate honours project.",
+      "highlights": [
+        "Implemented a web interface for an active learning classifier",
+        "Researched state of the art techniques for text classification",
+        "Researched approaches to improve accuracy while reducing the required quantity of labeled records",
+        "Wrote a project report",
+        "Presented our work, results and findings at the end of the semester"
+      ],
+      "keywords": [
+        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Langauges",
+      "keywords": [
+        "Ruby","Python","SQL","JavaScript","CSS/SCSS","Git","HTML","Java"
+      ]
+    },
+    {
+      "name": "Frameworks or Libraries",
+      "keywords": [
+        "Rails","Sinatra","Django","Underscore.js","OpenCV","Backbone.js","Marionette.js"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Digital Ocean","Dokku","Heroku","Continuous Integration","Continuous Delivery","Ubuntu Server"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Beginner"
+    }
+  ],
+  "references": [
+    { "name": "Herna Viktor" },
+    { "name": "Dave Chapman" },
+    { "name": "Erik Vilela" }
+  ]
+}

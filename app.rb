@@ -3,6 +3,7 @@ require 'date'
 require 'kramdown'
 require 'active_support/core_ext/integer/inflections'
 require 'builder'
+require 'json'
 
 TRAVEL_POSTS_FOLDER = '/travel/posts'
 
@@ -12,9 +13,10 @@ get '/' do
 end
 
 get '/cv' do
+  @json_cv = JSON.parse(File.read('views/cv/resume.json'))
   @stylesheet_name = 'cv'
-  @show_contact_details = params[:info] == 'show'
-  erb :cv
+  @show_contact_details = !params[:with_contact_details].nil?
+  erb :'cv/cv'
 end
 
 get '/travel' do
@@ -50,7 +52,47 @@ def format_date_ymd(date)
   date.strftime('%Y-%m-%d')
 end
 
-def format_date_md_ordinalize(date)
+def format_date_my(date)
+  date = Date.parse(date)
+  date.strftime("%b %Y")
+end
+
+def how_long(start_date, end_date)
+  distance_in_days = (Date.parse(end_date) - Date.parse(start_date)).to_f
+  how_long_in_words(distance_in_days)
+end
+
+# x month(s) OR x year(s) OR x year(s), x month(s)
+def how_long_in_words(distance_in_days)
+  _DAYS_IN_YEAR = 365
+  distance_in_months = distance_in_months(distance_in_days)
+  if distance_in_months < 1
+    ''
+  elsif (distance_in_months < 12)
+    naive_pluralize('month', distance_in_months)
+  else
+    years = (distance_in_days / _DAYS_IN_YEAR).round
+    distance_in_days -= years * _DAYS_IN_YEAR
+    length = naive_pluralize('year', years)
+    months = how_long_in_words(distance_in_months)
+    if months.empty?
+      return length
+    end
+    length << ', ' << months
+  end
+end
+
+def distance_in_months(distance_in_days)
+  _DAYS_IN_MONTH = 30
+  (distance_in_days / _DAYS_IN_MONTH).round
+end
+
+def naive_pluralize(word, count)
+  word = count === 1 ? word : word << 's'
+  "#{count} #{word}"
+end
+
+def format_date_mdy_ordinalize(date)
   date.strftime("%B #{date.day.ordinalize}, %Y")
 end
 
@@ -73,7 +115,7 @@ def generate_posts
       end
     end
     
-    post = {title: title, excerpt: excerpt, date: date, formatted_date: format_date_md_ordinalize(date), url: travel_post_url(date)}
+    post = {title: title, excerpt: excerpt, date: date, formatted_date: format_date_mdy_ordinalize(date), url: travel_post_url(date)}
     @posts << post
   end
 

@@ -1,0 +1,56 @@
+<% work = @json_cv['work'] %>
+<% volunteering = @json_cv['volunteer'] %>
+<% work_volunteering = [work, volunteering].flatten %>
+
+
+<section class="experience">
+  <header>
+    <h2>experience</h2>
+  </header>
+  <div class="experience items">
+    <% if !work_volunteering.nil? and !work_volunteering.empty? %>
+      <% for job in work_volunteering %>
+        <div class="experience item">
+          <header>
+            <h3>
+              <em><%= job['position'] %></em>,
+              <% org_or_co = job['company'].nil? ? job['organization'] : job['company'] %>
+              <a href="<%= job['website'] %>"><%= org_or_co %></a>
+            </h3>
+            <div class="tenure">
+              <div class="dates">
+                <span class="start-date"><%= format_date_my(job['startDate']) %></span>
+                <span class="to">→</span>
+                <% endDate = job['endDate'].include?('9999') ? 'now' : format_date_my(job['endDate']) %>
+                <span class="end-date"><%= endDate %></span>
+              </div>
+              <div class="duration">
+                <% endDate = job['endDate'].include?('9999') ? format_date_ymd(Date.today) : job['endDate'] %>
+                <span class="duration">(<%= how_long(job['startDate'], endDate) %>)</span>
+              </div>
+            </div>
+          </header>
+          <% if !job['keywords'].nil? and !job['keywords'].empty? %>
+            <div class="keywords">
+              <% for keyword in job['keywords'] %>
+                <span class="keyword"><%= keyword %></span>
+              <% end %>
+            </div>
+          <% end %>
+
+          <% if !job['summary'].nil? and !job['summary'].empty? %>
+            <p class="summary"><%= job['summary'] %></p>
+          <% end %>
+
+          <% if !job['highlights'].nil? and !job['highlights'].empty? %>
+            <ul class="highlights">
+              <% for highlight in job['highlights'] %>
+                <li class="highlight"><%= highlight %></li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>

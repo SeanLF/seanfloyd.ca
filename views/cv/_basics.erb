@@ -1,0 +1,46 @@
+<% basics = @json_cv['basics'] %>
+<header class="basics">
+  <div class="main">
+    <div>
+      <h1 class="name">
+        <a href="<%= basics['website'] %>"><%= basics['name'] %></a>
+        
+      </h1>
+      <div class="subheader"><%= basics['label'] %></div>
+    </div>
+
+    <div class="picture">
+      <img title="<%= basics['name'] %>" src="<%= basics['picture'] %>">
+    </div>
+  </div>
+
+  <div class="me">
+
+    <% if !basics['profiles'].nil? %>
+      <% icons = {'GitHub' => 'github', 'StackOverflow' => 'stack-overflow', 'LinkedIn' => 'linkedin'} %>
+      <% for profile in basics['profiles'] %>
+        <a href="<%= profile['url'] %>"><i class="fa fa-<%= icons[profile['network']] %>"></i><span class="show-on-print"><%= profile['network'] %></span></a>
+      <% end %>
+    <% end %>
+
+    <% unless @show_contact_details %>
+      <a href="/email"><i class="fa fa-envelope-o"></i><span class="show-on-print"><%= basics['email'] %></span></a>
+    <% end %>
+    
+
+    <div class="contact_details">
+      <% if @show_contact_details %>
+        <a href="/email"><i class="fa fa-envelope-o"></i><%= basics['email'] %></a>
+        <a href="tel:<%= basics['phone'] %>"><i class="fa fa-phone"></i><%= basics['phone'] %></a>
+        <a href="tel:<%= basics['altPhone'] %>"><i class="fa fa-phone"></i><%= basics['altPhone'] %></a>
+        <address>
+          <% if !basics['location'].nil? %>
+            <% for key in basics['location'].keys %>
+              <span><%= basics['location'][key] %></span>
+            <% end %>
+          <% end %>
+        </address>
+      <% end %>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,47 @@
+<%# 
+<% skills = @json_cv['skills'] %//todo:remove>
+<section class="skills">
+  <header>
+    <h2>skills</h2>
+  </header>
+</section>
+%>
+
+<% languages = @json_cv['languages'] %>
+<section class="skills languages">
+  <header>
+    <h2>skills & languages</h2>
+  </header>
+  <div class="skills languages items">
+    <aside>Development-related skills are noted under each item above, where applicable.</aside>
+    <% if !languages.nil? and !languages.empty? %>
+      <% for language in languages %>
+        <div class="languages item">
+          <span id="<%= language['language'] %>"><%= language['fluency'] %></span>
+          <span>in</span>
+          <label for="<%= language['language'] %>"><%= language['language'] %></label>
+        </div> 
+      <% end %>
+    <% end %>
+  </div>
+</section>
+
+<% references = @json_cv['references'] %>
+<section class="references">
+  <header>
+    <h2>references</h2>
+  </header>
+  <div class="references items">
+    <% if @show_contact_details %>
+      <% if !references.nil? and !references.empty? %>
+        <% for reference in references %>
+          <ul class="references item">
+            <li><%= reference['name'] %></li>
+          </ul>
+        <% end %>
+      <% end %>
+    <% else %>
+      <aside>References available upon request.</aside>
+    <% end %>
+  </div>
+</section>

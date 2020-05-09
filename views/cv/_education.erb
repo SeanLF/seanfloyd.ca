@@ -1,0 +1,41 @@
+<% education = @json_cv['education'] %>
+<section class="education">
+  <header>
+    <h2>education</h2>
+  </header>
+  <div class="education items">
+    <% if !education.nil? and !education.empty? %>
+      <% for diploma in education %>
+        <div class="education item">
+          <header>
+            <h3>
+              <em><%= diploma['studyType'] %> <%= diploma['area'] %></em>,
+              <a href="<%= diploma['website'] %>"><%= diploma['institution'] %></a>
+            </h3>
+            <div class="tenure">
+              <div class="dates">
+                <span class="end-date"><%= format_date_my(diploma['endDate']) %></span>
+              </div>
+            </div>
+          </header>
+          <% if !diploma['gpa'].nil? and !diploma['gpa'].empty? %>
+            <div class="gpa"><span>GPA</span><%= diploma['gpa'] %></div>
+          <% end %>
+
+          <% if !diploma['summary'].nil? and !diploma['summary'].empty? %>
+            <p class="summary"><%= diploma['summary'] %></p>
+          <% end %>
+
+          <% if !diploma['courses'].nil? and !diploma['courses'].empty? %>
+            <div>Courses taken:</div>
+            <ul class="courses">
+              <% for course in diploma['courses'] %>
+                <li class="course"><%= course %></li>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>
