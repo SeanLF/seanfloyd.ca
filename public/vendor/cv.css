@@ -3,7 +3,8 @@ html{
   --primary: hsl(217, 71%, 53%);
   --primary-light: hsla(217, 71%, 53%, 0.14);
   --background: hsl(0, 0%, 96%);
-  --border-color: #e1e1e1;
+  --border-color: hsl(0, 0%, 88%);
+  --border-color-card: hsl(0, 0%, 88%);
   --background-card: hsl(0, 0%, 100%);
   --text-color-dark: hsl(0, 0%, 21%);
   --text-color-dark-less-important: hsl(0, 0%, 45%);
@@ -11,6 +12,8 @@ html{
   --box-shadow-a: rgba(0,0,0,0.19);
   --box-shadow-b: rgba(0,0,0,0.23);
   --secondary:  hsl(48, 100%, 67%) ;
+  --text-color-tag: var(--primary);
+  --background-tag: var(--primary-light);
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.8rem;
   font-stretch: normal;
@@ -22,12 +25,13 @@ html{
 
 @media (prefers-color-scheme: dark) {
   html{
-    --background-card: #1d1d1d;
-    --background: #121212;
+    --background-card: hsl(0, 0%, 11%);
+    --background: hsl(0, 0%, 7%);
     --border-color: hsl(0, 0%, 45%);
     --text-color-dark: hsl(0, 0%, 89%);
     --text-color-light: hsl(0, 0%, 21%);
-  }
+    --border-color-card: var(--background-card);
+}
 }
 
 /* GLOBAL */
@@ -40,7 +44,9 @@ a {
   margin-right: 0.3rem;
   content: '';
 }
-
+.chips .chip{
+  margin-right: 0.5rem;
+}
 body {
   background-color: var(--background);
 }
@@ -52,6 +58,7 @@ body > main {
   max-width: 900px;
   padding: 1vh 1vw;
   background-color: var(--background-card);
+  border: 1px solid var(--border-color-card);
 }
 
 /* BASICS */
@@ -127,13 +134,13 @@ section > header > h2 {
 .item .tenure .duration {
   color: var(--text-color-dark-less-important);
 }
-.item .summary, .item .highlights, .item .courses {
+.item .summary, .item .highlights, .chips {
   margin: 0.3rem 0;
 }
-.item .keywords .keyword, .languages.item {
-  border: 1px solid var(--primary-light);
-  background-color: var(--primary-light);
-  color: var(--primary);
+.item .keywords .keyword, .languages.item, .courses.item, .chip {
+  border: 1px solid var(--background-tag);
+  background-color: var(--background-tag);
+  color: var(--text-color-tag);
   display: inline-block;
   border-radius: .1rem;
   padding: 0.1rem 0.1rem;
@@ -144,11 +151,20 @@ section > header > h2 {
   content: ': ';
   padding: 0rem;
 }
+.courses, .courses .item{
+  display: inline;
+  align-items: center;
+}
+.courses-taken{
+  display: inline-block;
+}
+.education .courses-taken {
+  display: inline-block;
+}
 
 /* SKILLS & LANGUAGES */
 .languages.item {
   display: inline-block;
-
 }
 
 /* @media (max-width:px) { */
@@ -156,6 +172,10 @@ section > header > h2 {
   .show-on-print{
     display: initial;
     visibility: initial;
+  }
+  .hide-on-print{
+    display: none;
+    visibility: hidden;
   }
   body {
     background-color: initial;
@@ -167,5 +187,6 @@ section > header > h2 {
     max-width: auto;
     padding: 0;
     background-color: initial;
+    border: none;
   }
 }

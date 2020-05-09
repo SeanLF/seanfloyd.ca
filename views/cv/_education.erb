@@ -27,12 +27,14 @@
           <% end %>
 
           <% if !diploma['courses'].nil? and !diploma['courses'].empty? %>
-            <div>Courses taken:</div>
-            <ul class="courses">
-              <% for course in diploma['courses'] %>
-                <li class="course"><%= course %></li>
-              <% end %>
-            </ul>
+            <div class="courses">
+              <div class="courses-taken">Courses: </div>
+              <div class="courses items">
+                <% for course in diploma['courses'] %>
+                  <span class="courses item"><%= course %></span>
+                <% end %>
+              </div>
+            </div>
           <% end %>
         </div>
       <% end %>
