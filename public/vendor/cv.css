@@ -180,6 +180,9 @@ section > header > h2 {
   body {
     background-color: initial;
   }
+  a {
+    text-decoration: underline;
+  }
   /* LAYOUT */
   body > main {
     margin: initial auto;
