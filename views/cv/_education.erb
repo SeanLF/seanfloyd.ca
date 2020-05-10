@@ -22,10 +22,6 @@
             <div class="gpa"><span>GPA</span><%= diploma['gpa'] %></div>
           <% end %>
 
-          <% if !diploma['summary'].nil? and !diploma['summary'].empty? %>
-            <p class="summary"><%= diploma['summary'] %></p>
-          <% end %>
-
           <% if !diploma['courses'].nil? and !diploma['courses'].empty? %>
             <div class="courses">
               <div class="courses-taken">Courses: </div>

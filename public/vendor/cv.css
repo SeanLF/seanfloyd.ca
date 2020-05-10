@@ -56,9 +56,12 @@ body > main {
   margin: 1rem auto;
   align-self: center;
   max-width: 900px;
-  padding: 1vh 1vw;
   background-color: var(--background-card);
   border: 1px solid var(--border-color-card);
+}
+main > * {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 /* BASICS */
@@ -191,5 +194,9 @@ section > header > h2 {
     padding: 0;
     background-color: initial;
     border: none;
+  }
+  main > * {
+    padding-left: initial;
+    padding-right: initial;
   }
 }
