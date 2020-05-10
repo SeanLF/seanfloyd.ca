@@ -53,7 +53,7 @@ body {
 
 /* LAYOUT */
 body > main {
-  margin: 1rem auto;
+  margin: 5rem auto;
   align-self: center;
   max-width: 900px;
   background-color: var(--background-card);
@@ -62,6 +62,12 @@ body > main {
 main > * {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+main > *:first-child {
+  padding-top: 5rem;  
+}
+main > *:last-child {
+  padding-bottom: 5rem;
 }
 
 /* BASICS */
@@ -170,7 +176,19 @@ section > header > h2 {
   display: inline-block;
 }
 
-/* @media (max-width:px) { */
+@media (max-width:700px) {
+  body{
+    background-color: initial;
+  }
+  body > main {
+    border: initial;
+  }
+  main > * {
+    padding-left: initial;
+    padding-right: initial;
+    margin: 1rem;
+  }
+}
 @media print {
   .show-on-print{
     display: initial;
@@ -188,7 +206,7 @@ section > header > h2 {
   }
   /* LAYOUT */
   body > main {
-    margin: initial auto;
+    margin: 0 auto;
     align-self: center;
     max-width: auto;
     padding: 0;
@@ -198,5 +216,11 @@ section > header > h2 {
   main > * {
     padding-left: initial;
     padding-right: initial;
+  }
+  main > *:first-child {
+    padding-top: initial;  
+  }
+  main > *:last-child {
+    padding-bottom: initial;
   }
 }
