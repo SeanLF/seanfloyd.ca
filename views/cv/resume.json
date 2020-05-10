@@ -193,6 +193,18 @@
       ]
     },
     {
+      "name": "Personal website",
+      "position": "Creator",
+      "website": "https://seanfloyd.ca",
+      "startDate": "2016-03-30",
+      "endDate": "9999-01-01",
+      "summary": "",
+      "highlights": [],
+      "keywords": [
+        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","Continuous Integration","Continuous Delivery","Git","JSON","Linux"
+      ]
+    },
+    {
       "name": "An Active Learning System for Text Classification",
       "position": "Team Lead",
       "website": "https://github.com/SeanLF/CSI4900",
