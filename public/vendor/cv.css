@@ -188,6 +188,15 @@ section > header > h2 {
     padding-right: initial;
     margin: 1rem;
   }
+  header.basics .picture{
+    display: none;
+    visibility: hidden;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--background);
+    }
+  }
 }
 @media print {
   .show-on-print{
