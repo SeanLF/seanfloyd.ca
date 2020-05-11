@@ -21,6 +21,7 @@ get '/' do
 end
 
 get '/cv' do
+  return redirect cv_paths['fr'] if R18n.get.locale.code.include? 'fr'
   cv()
 end
 
@@ -29,7 +30,7 @@ get '/:locale/cv' do
 end
 
 def cv
-  @json_cv = JSON.parse(File.read("views/cv/#{R18n.get().locale.code}.cv.json"))
+  @json_cv = JSON.parse(File.read("views/cv/#{R18n.get.locale.code}.cv.json"))
   @stylesheet_name = 'cv'
   @show_contact_details = !params[:with_contact_details].nil?
   erb :'cv/cv'
