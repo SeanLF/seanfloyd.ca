@@ -52,8 +52,12 @@ body {
 }
 
 /* LAYOUT */
+nav{
+  margin: auto;
+  text-align: center;
+}
 body > main {
-  margin: 5rem auto;
+  margin: 3rem auto 5rem auto;
   align-self: center;
   max-width: 900px;
   background-color: var(--background-card);
@@ -218,6 +222,10 @@ section > header > h2 {
     text-decoration: underline;
   }
   /* LAYOUT */
+  nav{
+    display: none;
+    visibility: hidden;
+  }
   body > main {
     margin: 0 auto;
     align-self: center;
