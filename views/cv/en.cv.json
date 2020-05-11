@@ -142,7 +142,7 @@
     {
       "name": "Soft Voting Windowing Ensembles for Learning from Partially Labelled Streams",
       "publisher": "ECML PKDD nfCMP",
-      "releaseDate": "2020-06-01",
+      "releaseDate": "2020-07-22",
       "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
       "summary": "Short-form paper from thesis research, showcased at the ECML PKDD nfCMP 2019 workshop."
     },
@@ -205,54 +205,14 @@
       "website": "https://github.com/SeanLF/CSI4900",
       "startDate": "2016-10-01",
       "endDate": "2016-12-10",
-      "summary": "Implemented a proof-of-concept for an online active-learner to handle text-classification for the undergraduate honours project.",
+      "summary": "Undergraduate honours research project: Implemented a proof-of-concept for an online active-learner to handle text-classification.",
       "highlights": [],
       "keywords": [
         "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification"
       ]
     }
   ],
-  "skills": [
-    {
-      "name": "Programming Langauges",
-      "keywords": [
-        "Ruby","Python","SQL","JavaScript","CSS/SCSS","Git","HTML","Java"
-      ]
-    },
-    {
-      "name": "Frameworks or Libraries",
-      "keywords": [
-        "Rails","Sinatra","Django","Underscore.js","OpenCV","Backbone.js","Marionette.js"
-      ]
-    },
-    {
-      "name": "DevOps",
-      "keywords": [
-        "Digital Ocean","Dokku","Heroku","Continuous Integration","Continuous Delivery","Ubuntu Server"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "French",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Beginner"
-    },
-    {
-      "language": "Japanese",
-      "fluency": "Beginner"
-    }
-  ],
-  "references": [
-    { "name": "Herna Viktor" },
-    { "name": "Dave Chapman" },
-    { "name": "Erik Vilela" }
-  ]
+  "skills": [],
+  "languages": [],
+  "references": []
 }

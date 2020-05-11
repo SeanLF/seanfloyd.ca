@@ -41,7 +41,7 @@
       "endDate": "2016-08-30",
       "summary": "Développement de nouvelles fonctionnalités, maintien du code, correction de bugs, participation à la révision du code et aux tests d'assurance qualité.",
       "highlights": [
-        "Conçu, designer et développé une preuve de concept pour une nouvelle fonctionnalité de base, permettant aux utilisateurs de gérer leurs connexions réseau à partir d'un diagramme et de la nomenclature d'un projet.",
+        "Conçu, design-er et développé une preuve de concept pour une nouvelle fonctionnalité de base, permettant aux utilisateurs de gérer leurs connexions réseau à partir d'un diagramme et de la nomenclature d'un projet.",
         "Augmentation de la productivité des développeurs en rationalisant le processus de révision du code.",
         "Amélioration des performances et du temps de réponse jusqu'à 50% après avoir découvert et corrigé de nombreuses requêtes N+1."
       ],
@@ -150,7 +150,7 @@
     {
       "name": "Ensembles de fenêtrage à vote 'soft' pour l'apprentissage à partir de flux de données partiellement étiquetées",
       "publisher": "ECML PKDD nfCMP",
-      "releaseDate": "2020-06-01",
+      "releaseDate": "2020-07-22",
       "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
       "summary": "Document abrégé de ma recherche de thèse, présenté pendant l'atelier de la conférence ECML PKDD nfCMP 2019."
     },
@@ -220,47 +220,7 @@
       ]
     }
   ],
-  "skills": [
-    {
-      "name": "Langues de programmation",
-      "keywords": [
-        "Ruby","Python","SQL","JavaScript","CSS/SCSS","Git","Java"
-      ]
-    },
-    {
-      "name": "Frameworks or Libraries",
-      "keywords": [
-        "Rails","Sinatra","Django","Underscore.js","OpenCV","Backbone.js","Marionette.js"
-      ]
-    },
-    {
-      "name": "DevOps",
-      "keywords": [
-        "Digital Ocean","Dokku","Heroku","Continuous Integration","Continuous Delivery","Ubuntu Server"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "anglais",
-      "fluency": "natif"
-    },
-    {
-      "language": "français",
-      "fluency": "natif"
-    },
-    {
-      "language": "espagnol",
-      "fluency": "débutant"
-    },
-    {
-      "language": "japonais",
-      "fluency": "débutant"
-    }
-  ],
-  "references": [
-    { "name": "Herna Viktor" },
-    { "name": "Dave Chapman" },
-    { "name": "Erik Vilela" }
-  ]
+  "skills": [],
+  "languages": [],
+  "references": []
 }
