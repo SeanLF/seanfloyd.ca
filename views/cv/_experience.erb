@@ -5,7 +5,7 @@
 
 <section class="experience">
   <header>
-    <h2>experience</h2>
+    <h2><%= R18n.t.cv.headers.experience %></h2>
   </header>
   <div class="experience items">
     <% if !work_volunteering.nil? and !work_volunteering.empty? %>
@@ -17,18 +17,7 @@
               <% org_or_co = job['company'].nil? ? job['organization'] : job['company'] %>
               <a href="<%= job['website'] %>"><%= org_or_co %></a>
             </h3>
-            <div class="tenure">
-              <div class="dates">
-                <span class="start-date"><%= format_date_my(job['startDate']) %></span>
-                <span class="to">→</span>
-                <% endDate = job['endDate'].include?('9999') ? 'now' : format_date_my(job['endDate']) %>
-                <span class="end-date"><%= endDate %></span>
-              </div>
-              <div class="duration">
-                <% endDate = job['endDate'].include?('9999') ? format_date_ymd(Date.today) : job['endDate'] %>
-                <span class="duration">(<%= how_long(job['startDate'], endDate) %>)</span>
-              </div>
-            </div>
+            <%= erb :'cv/dates/_tenure', locals: {dates: {start_date: job['startDate'], end_date: job['endDate']}} %>
           </header>
           <% if !job['keywords'].nil? and !job['keywords'].empty? %>
             <div class="keywords">

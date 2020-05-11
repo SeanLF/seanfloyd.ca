@@ -7,7 +7,7 @@
         
       </h1>
       <div class="subheader"><%= basics['label'] %></div>
-      <div class="chips"><span class="chip">Canadian citizen</span><span class="chip">French citizen</span></div>
+      <div class="chips"><span class="chip"><%= R18n.t.cv.citizenship.canada %></span><span class="chip"><%= R18n.t.cv.citizenship.france %></span></div>
     </div>
 
     <div class="picture hide-on-print">
@@ -18,7 +18,6 @@
   <div class="me">
 
     <% if !basics['profiles'].nil? %>
-      <% icons = {'GitHub' => 'github', 'StackOverflow' => 'stack-overflow', 'LinkedIn' => 'linkedin'} %>
       <% for profile in basics['profiles'] %>
         <a href="<%= profile['url'] %>"><i class="fa fa-<%= icons[profile['network']] %>"></i><span class="show-on-print"><%= profile['network'] %></span></a>
       <% end %>

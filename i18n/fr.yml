@@ -1,0 +1,25 @@
+cv:
+  citizenship:
+    canada: 'Nationalité canadienne'
+    france: 'Nationalité française'
+  time:
+    now: 'auj.'
+    year: 
+      count: !!pl
+        0: '%1 ans'
+        1: '%1 an'
+        n: '%1 ans'
+    month: 
+      count: !!pl
+        0: '%1 mois'
+        1: '%1 mois'
+        n: '%1 mois'
+  headers:
+    projects: 'projets'
+    education: 'éducation'
+    experience: 'expérience'
+    publication: 'publications'
+  education:
+    study_type_in: ' en '
+    gpa: 'Moyenne Générale'
+    courses_taken: 'Cours'

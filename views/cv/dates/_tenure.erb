@@ -1,0 +1,15 @@
+<!-- <%= dates %> -->
+<div class="tenure">
+  <div class="dates">
+    <% unless dates[:start_date].nil? %><span class="start-date"><%= humanize_date(dates[:start_date]) %></span><% end %>
+    <% unless dates[:start_date].nil? or dates[:end_date].nil? %>
+      <span class="to">→</span>
+    <% end %>
+    <% unless dates[:end_date].nil? %>
+      <span class="end-date"><%= humanize_date(dates[:end_date]) %></span>
+    <% end %>
+  </div>
+  <% unless dates[:start_date].nil? or dates[:end_date].nil? %>
+    <%= erb :'cv/dates/_tenure_duration', locals: {start_date: dates[:start_date], end_date: dates[:end_date]} %>
+  <% end %>
+</div>

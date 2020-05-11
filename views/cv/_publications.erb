@@ -2,7 +2,7 @@
 
 <section class="publications">
   <header>
-    <h2>publications</h2>
+    <h2><%= R18n.t.cv.headers.publications %></h2>
   </header>
   <div class="publications items">
     <% if !publications.nil? and !publications.empty? %>
@@ -12,11 +12,7 @@
             <h3>
               <a href="<%= publication['website'] %>"><%= publication['name'] %></a>
             </h3>
-            <div class="tenure">
-              <div class="dates">
-                <span class="start-date"><%= format_date_my(publication['releaseDate']) %></span>
-              </div>
-            </div>
+            <%= erb :'cv/dates/_tenure', locals: {dates: {start_date: publication['releaseDate']}} %>
           </header>
           <% if !publication['keywords'].nil? and !publication['keywords'].empty? %>
             <div class="keywords">

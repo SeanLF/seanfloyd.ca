@@ -2,7 +2,7 @@
 
 <section class="projects">
   <header>
-    <h2>projects</h2>
+    <h2><%= R18n.t.cv.headers.projects %></h2>
   </header>
   <div class="projects items">
     <% if !projects.nil? and !projects.empty? %>
@@ -13,18 +13,7 @@
               <em><%= project['position'] %></em>,
               <a href="<%= project['website'] %>"><%= project['name'] %></a>
             </h3>
-            <div class="tenure">
-              <div class="dates">
-                <span class="start-date"><%= format_date_my(project['startDate']) %></span>
-                <span class="to">→</span>
-                <% endDate = project['endDate'].include?('9999') ? 'now' : format_date_my(project['endDate']) %>
-                <span class="end-date"><%= endDate %></span>
-              </div>
-              <div class="duration">
-                <% endDate = project['endDate'].include?('9999') ? format_date_ymd(Date.today) : project['endDate'] %>
-                <span class="duration">(<%= how_long(project['startDate'], endDate) %>)</span>
-              </div>
-            </div>
+            <%= erb :'cv/dates/_tenure', locals: {dates: {start_date: project['startDate'], end_date: project['endDate']}} %>
           </header>
           <% if !project['keywords'].nil? and !project['keywords'].empty? %>
             <div class="keywords">

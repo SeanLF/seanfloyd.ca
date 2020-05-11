@@ -1,7 +1,7 @@
 <% education = @json_cv['education'] %>
 <section class="education">
   <header>
-    <h2>education</h2>
+    <h2><%= R18n.t.cv.headers.education %></h2>
   </header>
   <div class="education items">
     <% if !education.nil? and !education.empty? %>
@@ -9,22 +9,18 @@
         <div class="education item">
           <header>
             <h3>
-              <em><%= diploma['studyType'] %> <%= diploma['area'] %></em>,
+              <em><%= diploma['studyType'] %><%= R18n.t.cv.education.study_type_in %><%= diploma['area'] %></em>,
               <a href="<%= diploma['website'] %>"><%= diploma['institution'] %></a>
             </h3>
-            <div class="tenure">
-              <div class="dates">
-                <span class="end-date"><%= format_date_my(diploma['endDate']) %></span>
-              </div>
-            </div>
+            <%= erb :'cv/dates/_tenure', locals: {dates:{'end_date': diploma['endDate']}} %>
           </header>
           <% if !diploma['gpa'].nil? and !diploma['gpa'].empty? %>
-            <div class="gpa"><span>GPA</span><%= diploma['gpa'] %></div>
+            <div class="gpa"><span><%= R18n.t.cv.education.gpa %></span><%= diploma['gpa'] %></div>
           <% end %>
 
           <% if !diploma['courses'].nil? and !diploma['courses'].empty? %>
             <div class="courses">
-              <div class="courses-taken">Courses: </div>
+              <div class="courses-taken"><%= R18n.t.cv.education.courses_taken %></div>
               <div class="courses items">
                 <% for course in diploma['courses'] %>
                   <span class="courses item"><%= course %></span>

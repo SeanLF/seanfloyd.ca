@@ -1,0 +1,266 @@
+{
+  "basics": {
+    "name": "Sean Floyd",
+    "label": "Bac+6 en Informatique, presque 2 ans d'expérience, 2 publications, bilingue",
+    "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
+    "email": "seanfloyd@icloud.com",
+    "phone": "+1 (343) 882-4123",
+    "altPhone": "+33 (0)7 66 44 70 46",
+    "website": "https://seanfloyd.ca",
+    "location": {
+      "address": "302-287 Metcalfe Street",
+      "postalCode": "K2P 0L9",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "countryCode": "CA"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "SeanLF",
+        "url": "https://github.com/SeanLF"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "floydsean",
+        "url": "https://ca.linkedin.com/in/floydsean"
+      },
+      {
+        "network": "StackOverflow",
+        "username": "seanfloyd",
+        "url": "https://stackoverflow.com/story/seanfloyd"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "D3M Networks | Teldio",
+      "position": "Ingénieur logiciel",
+      "website": "http://www.d3mnetworks.com/",
+      "startDate": "2016-05-01",
+      "endDate": "2016-08-30",
+      "summary": "Développement de nouvelles fonctionnalités, maintien du code, correction de bugs, participation à la révision du code et aux tests d'assurance qualité.",
+      "highlights": [
+        "Conçu, designer et développé une preuve de concept pour une nouvelle fonctionnalité de base, permettant aux utilisateurs de gérer leurs connexions réseau à partir d'un diagramme et de la nomenclature d'un projet.",
+        "Augmentation de la productivité des développeurs en rationalisant le processus de révision du code.",
+        "Amélioration des performances et du temps de réponse jusqu'à 50% après avoir découvert et corrigé de nombreuses requêtes N+1."
+      ],
+      "keywords": [
+        "Ruby","Rails","JavaScript","SQL","SCSS","Git","Marionette"
+      ]
+    },
+    {
+      "company": "Chambre des Communes Canada",
+      "position": "Ingénieur logiciel",
+      "website": "https://parl.ca",
+      "startDate": "2015-09-01",
+      "endDate": "2015-12-15",
+      "summary": "Conçu, développé et documenté un service web, une base de données et un tableau de bord pour la surveillance des journaux du système financier du Parlement ainsi qu'un quiz de phishing interactif.",
+      "highlights": [],
+      "keywords": [
+        "VB.NET","SQL","JavaScript","CSS", "knockout.js", "Bootstrap","IIS"
+      ]
+    },
+    {
+      "company": "etixnow",
+      "position": "Contractant",
+      "website": "https://etixnow.com",
+      "startDate": "2015-07-15",
+      "endDate": "2015-08-30",
+      "summary": "Développé un panneau d'administration pour les mini kiosques de point de vente à écran tactile linux à faible mémoire, qui s'exécute dans un navigateur WebKit QT personnalisé.",
+      "keywords": [
+        "HTML","JavaScript","CSS","QT browser","Linux"
+      ]
+    },
+    {
+      "company": "Conseil d'examen du prix des médicaments brevetés",
+      "position": "Analyste Programmeur",
+      "website": "https://www.canada.ca/fr/examen-prix-medicaments-brevetes.html",
+      "startDate": "2014-05-01",
+      "endDate": "2015-04-30",
+      "summary": "Amélioration et maintenance d'une application Web .NET.",
+      "highlights": [
+        "Gérance par intérim de l'outil de régulation principal du conseil pendant 6 semaines.",
+        "Repérage et correction de problèmes dans les données de production qui auraient pu entraîner des conséquences juridiques pour l'employeur.",
+        "Amélioration de plus de 50% du temps de réponse de la génération d'un rapport, suite à de meilleures requêtes SQL et à une refactorisation.",
+        "Résolution de 85% du backlog de produit (bogues et fonctionnalités)."
+      ],
+      "keywords": [
+        "C#","JavaScript","CSS","SQL","TFS"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Festival de jazz d’Ottawa ",
+      "position": "Bénévole",
+      "website": "http://ottawajazzfestival.com",
+      "startDate": "2009-06-20",
+      "endDate": "now",
+      "summary": "Divers rôles: développement et gestion du site de recrutement Jazzify, superviseur de la numérisation des billets, caissier et barman",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Université d'Ottawa",
+      "website": "https://uottawa.ca",
+      "area": "Informatique",
+      "studyType": "Master (bac+6)",
+      "startDate": "2017-01-01",
+      "endDate": "2019-06-13",
+      "gpa": "9.8/10",
+      "courses": [
+        "Data Mining et apprentissage conceptuel",
+        "Bases de données distribuées",
+        "Analyse et conception de bases de données",
+        "Informatique distribué"
+      ],
+      "summary": "Maîtrise à thèse, admis avec un total de 35 000 $ en bourses et subventions. Publication d'une thèse et de deux articles."
+    },
+    {
+      "institution": "Université d'Ottawa",
+      "website": "https://uottawa.ca",
+      "area": "Informatique",
+      "studyType": "Bachelor (bac+4) avec stages coopératifs",
+      "startDate": "2012-09-01",
+      "endDate": "2016-12-20",
+      "gpa": "8.4/10",
+      "courses": [
+        "Récupération de l'information",
+        "Intelligence artificielle",
+        "Méthodes de traitement d'images",
+        "Conception de systèmes temps réel"
+      ],
+      "summary": "Participé au programme d'enseignement coopératif, conduisant à 4 stages de quatre mois au cours du diplôme."
+    },
+    {
+      "institution": "Académie de Caen",
+      "website": "https://www.ac-caen.fr",
+      "area": "série scientifique",
+      "studyType": "Baccalauréat Général",
+      "startDate": "2010-09-01",
+      "endDate": "2012-06-10",
+      "gpa": "",
+      "courses": [],
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "Ensembles de fenêtrage à vote 'soft' pour l'apprentissage à partir de flux de données partiellement étiquetées",
+      "publisher": "ECML PKDD nfCMP",
+      "releaseDate": "2020-06-01",
+      "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
+      "summary": "Document abrégé de ma recherche de thèse, présenté pendant l'atelier de la conférence ECML PKDD nfCMP 2019."
+    },
+    {
+      "name": "Ensembles de fenêtrage hybrides semi-supervisés pour apprendre à partir de flux de données en évolution",
+      "publisher": "Thèse",
+      "releaseDate": "2019-06-10",
+      "website": "https://ruor.uottawa.ca/handle/10393/39273",
+      "summary": "Recherche de thèse: Développement d'un algorithme d'apprentissage automatique d'ensembles, environ 160 fois plus rapide que les techniques de pointe actuelles, et d'une précision prédictive comparable. Les contributions comprennent: ",
+      "highlights":[
+        "Nouvelle approche du fenêtrage pour les ensembles,",
+        "Modification d'un détecteur de dérive pour fonctionner sans aucune donnée étiquetée,",
+        "Système de vote 'soft' pondéré pour les ensembles,",
+        "Enquête sur les limites de l'autoformation non sélective."
+      ],
+      "keywords": [
+        "Python","Ruby","Data Mining","Data Streams"
+      ]
+    },
+    {
+      "name": "Une étude exploratoire de la santé bucco-dentaire au Canada",
+      "publisher": "IEEE ICMLA",
+      "releaseDate": "2017-12-18",
+      "website": "https://ieeexplore.ieee.org/document/8260794/",
+      "summary": "Article publié à la conférence IEEE ICMLA 2017. Données provenant de l'ESCC par Statistique Canada.",
+      "highlights": [],
+      "keywords": [
+        "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Jazzify",
+      "position": "Créateur",
+      "website": "https://jazzify.ca",
+      "startDate": "2015-01-01",
+      "endDate": "now",
+      "summary": "Création d'un site Web pour moderniser le recrutement de nouveaux bénévoles pour le Festival de jazz d'Ottawa. Des milliers de candidats se sont présentés au cours des 5 dernières années.",
+      "highlights": [],
+      "keywords": [
+        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","Continuous Integration","RSpec"
+      ]
+    },
+    {
+      "name": "Site personnel",
+      "position": "Créateur",
+      "website": "https://seanfloyd.ca",
+      "startDate": "2016-03-30",
+      "endDate": "now",
+      "summary": "",
+      "highlights": [],
+      "keywords": [
+        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","Continuous Integration","Continuous Delivery","Git","JSON","Linux"
+      ]
+    },
+    {
+      "name": "Un système d'Active Learning pour la classification des textes",
+      "position": "Chef d'équipe",
+      "website": "https://github.com/SeanLF/CSI4900",
+      "startDate": "2016-10-01",
+      "endDate": "2016-12-10",
+      "summary": "Projet de recherche de licence: Création d'un système d'Active Learning en ligne pour la classification des textes.",
+      "highlights": [],
+      "keywords": [
+        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Langues de programmation",
+      "keywords": [
+        "Ruby","Python","SQL","JavaScript","CSS/SCSS","Git","Java"
+      ]
+    },
+    {
+      "name": "Frameworks or Libraries",
+      "keywords": [
+        "Rails","Sinatra","Django","Underscore.js","OpenCV","Backbone.js","Marionette.js"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Digital Ocean","Dokku","Heroku","Continuous Integration","Continuous Delivery","Ubuntu Server"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "anglais",
+      "fluency": "natif"
+    },
+    {
+      "language": "français",
+      "fluency": "natif"
+    },
+    {
+      "language": "espagnol",
+      "fluency": "débutant"
+    },
+    {
+      "language": "japonais",
+      "fluency": "débutant"
+    }
+  ],
+  "references": [
+    { "name": "Herna Viktor" },
+    { "name": "Dave Chapman" },
+    { "name": "Erik Vilela" }
+  ]
+}

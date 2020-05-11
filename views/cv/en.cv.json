@@ -99,7 +99,7 @@
       "position": "Volunteer",
       "website": "http://ottawajazzfestival.com",
       "startDate": "2009-06-20",
-      "endDate": "9999-01-01",
+      "endDate": "now",
       "summary": "Various roles: developped and managed Jazzify recruitment website, ticket scanning supervisor, barback, cashier, and bartender",
       "highlights": []
     }
@@ -110,7 +110,7 @@
       "website": "https://uottawa.ca",
       "area": "Computer Science",
       "studyType": "M.Sc.",
-      "startDate": "2016-01-01",
+      "startDate": "2017-01-01",
       "endDate": "2019-06-13",
       "gpa": "9.8/10",
       "courses": [
@@ -127,7 +127,7 @@
       "area": "Computer Science",
       "studyType": "Honours B.Sc. (co-op)",
       "startDate": "2012-09-01",
-      "endDate": "2015-12-20",
+      "endDate": "2016-12-20",
       "gpa": "8.4/10",
       "courses": [
         "Information Retrieval",
@@ -167,13 +167,8 @@
       "publisher": "IEEE ICMLA",
       "releaseDate": "2017-12-18",
       "website": "https://ieeexplore.ieee.org/document/8260794/",
-      "summary": "Published a paper at the IEEE ICMLA 2017 conference with 2 other students, under the supervision of Dr. Herna Viktor. This paper is the result of a graduate level directed studies course on data warehousing.",
-      "highlights": [
-        "Acquired data from the Canadian Community Health Survey provided by Statistics Canada.",
-        "Used R, Python and Microsoft's ETL suite to build a data cube according to Kimball's data warehouse lifecycle framework.",
-        "Performed an exploratory analysis of the data using WEKA's data mining tools.",
-        "Presented our work, results and findings at the end of the semester in a presentation and report."
-      ],
+      "summary": "Published a paper at the IEEE ICMLA 2017 conference. Acquired data from the Canadian Community Health Survey provided by Statistics Canada.",
+      "highlights": [],
       "keywords": [
         "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
       ]
@@ -185,7 +180,7 @@
       "position": "Creator",
       "website": "https://jazzify.ca",
       "startDate": "2015-01-01",
-      "endDate": "9999-01-01",
+      "endDate": "now",
       "summary": "Created a website to modernize recruitment of new volunteers for the Ottawa Jazz Festival. Thousands of applicants in the 5 consecutive years it has been running.",
       "highlights": [],
       "keywords": [
@@ -197,7 +192,7 @@
       "position": "Creator",
       "website": "https://seanfloyd.ca",
       "startDate": "2016-03-30",
-      "endDate": "9999-01-01",
+      "endDate": "now",
       "summary": "",
       "highlights": [],
       "keywords": [

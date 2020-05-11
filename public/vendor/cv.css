@@ -167,6 +167,10 @@ section > header > h2 {
 .courses-taken{
   display: inline-block;
 }
+.courses-taken::after{
+  content: ': ';
+  padding: 0;
+}
 .education .courses-taken {
   display: inline-block;
 }

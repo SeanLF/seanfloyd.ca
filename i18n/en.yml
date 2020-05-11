@@ -1,0 +1,25 @@
+cv:
+  citizenship:
+    canada: 'Canadian citizenship'
+    france: 'French citizenship'
+  time:
+    now: 'now'
+    year: 
+      count: !!pl
+        0: '%1 years'
+        1: '%1 year'
+        n: '%1 years'
+    month: 
+      count: !!pl
+        0: '%1 months'
+        1: '%1 month'
+        n: '%1 months'
+  headers:
+    projects: 'projects'
+    education: 'education'
+    experience: 'experience'
+    publications: 'publications'
+  education:
+    study_type_in: ' '
+    gpa: 'GPA'
+    courses_taken: 'Courses'
