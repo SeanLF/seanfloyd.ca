@@ -10,7 +10,6 @@
         <div class="projects item">
           <header>
             <h3>
-              <em><%= project['position'] %></em>,
               <a href="<%= project['website'] %>"><%= project['name'] %></a>
             </h3>
             <%= erb :'cv/dates/_tenure', locals: {dates: {start_date: project['startDate'], end_date: project['endDate']}} %>

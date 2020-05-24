@@ -41,7 +41,7 @@
       "endDate": "2016-08-30",
       "summary": "Developed new features, maintained code, fixed bugs, participated in code review and quality assurance testing.",
       "highlights": [
-        "Designed, architected and developed a proof of concept for a new core feature, allowing users to manage their network connections from within a diagram, and a projects' bill of materials.",
+        "Designed, architected and developed a proof of concept for a new core feature, allowing users to manage their network connections from within a diagram, and a project's bill of materials.",
         "Increased developer productivity by streamlining the code review process.",
         "Improved performance and response time by up to 50% after discovering and fixing numerous N+1 queries."
       ],
@@ -66,7 +66,7 @@
     },
     {
       "company": "etixnow",
-      "position": "Contractor",
+      "position": "Remote Contractor",
       "website": "https://etixnow.com",
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
@@ -94,15 +94,6 @@
     }
   ],
   "volunteer": [
-    {
-      "organization": "Ottawa Jazz Festival",
-      "position": "Volunteer",
-      "website": "http://ottawajazzfestival.com",
-      "startDate": "2009-06-20",
-      "endDate": "now",
-      "summary": "Various roles: developped and managed Jazzify recruitment website, ticket scanning supervisor, barback, cashier, and bartender",
-      "highlights": []
-    }
   ],
   "education": [
     {
@@ -116,7 +107,7 @@
       "courses": [
         "Data Mining and Concept Learning",
         "Distributed Databases",
-        "Database Analysis and Design",
+        "Data Warehousing & Analytics",
         "Distributed Computing"
       ],
       "summary": "Thesis-based masters, admitted with a total of $35k in scholarships and grants. Published a thesis and two papers."
@@ -175,6 +166,36 @@
     }
   ],
   "projects": [
+    {
+      "name": "Tinder machine learning app",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/tinder-swipe-learner",
+      "summary": "Built a Tinder web app clone that interacts with the library written below. My objective is to build my own machine learning recommender system.",
+      "highlights": [],
+      "keywords": [
+        "Python","API","Flask","TDD","Git"
+      ]
+    },
+    {
+      "name": "Tinder API Python wrapper",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/Tinder",
+      "summary": "Reverse-engineered Tinder's API and wrote a Python wrapper to interact with it.",
+      "highlights": [],
+      "keywords": [
+        "Python","API","TDD","Git"
+      ]
+    },
+    {
+      "name": "1Password CLI Python wrapper",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/1Password-cli-python-wrapper--to-transfer-documents-between-accounts",
+      "summary": "Built a python wrapper to implement a missing feature in 1Password: transfering documents between accounts.",
+      "highlights": [],
+      "keywords": [
+        "Python","API","CLI","Git"
+      ]
+    },
     {
       "name": "Jazzify",
       "position": "Creator",

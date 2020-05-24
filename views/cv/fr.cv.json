@@ -41,7 +41,7 @@
       "endDate": "2016-08-30",
       "summary": "Développement de nouvelles fonctionnalités, maintien du code, correction de bugs, participation à la révision du code et aux tests d'assurance qualité.",
       "highlights": [
-        "Conçu, design-er et développé une preuve de concept pour une nouvelle fonctionnalité de base, permettant aux utilisateurs de gérer leurs connexions réseau à partir d'un diagramme et de la nomenclature d'un projet.",
+        "Conçu, design-é et développé une preuve de concept pour une nouvelle fonctionnalité de base, permettant aux utilisateurs de gérer leurs connections réseau à partir d'un diagramme et de la nomenclature d'un projet.",
         "Augmentation de la productivité des développeurs en rationalisant le processus de révision du code.",
         "Amélioration des performances et du temps de réponse jusqu'à 50% après avoir découvert et corrigé de nombreuses requêtes N+1."
       ],
@@ -63,7 +63,7 @@
     },
     {
       "company": "etixnow",
-      "position": "Contractant",
+      "position": "Contractant en Remote",
       "website": "https://etixnow.com",
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
@@ -91,15 +91,6 @@
     }
   ],
   "volunteer": [
-    {
-      "organization": "Festival de jazz d’Ottawa ",
-      "position": "Bénévole",
-      "website": "http://ottawajazzfestival.com",
-      "startDate": "2009-06-20",
-      "endDate": "now",
-      "summary": "Divers rôles: développement et gestion du site de recrutement Jazzify, superviseur de la numérisation des billets, caissier et barman",
-      "highlights": []
-    }
   ],
   "education": [
     {
@@ -113,7 +104,7 @@
       "courses": [
         "Data Mining et apprentissage conceptuel",
         "Bases de données distribuées",
-        "Analyse et conception de bases de données",
+        "Entreposage et analyse de données",
         "Informatique distribué"
       ],
       "summary": "Maîtrise à thèse, admis avec un total de 35 000 $ en bourses et subventions. Publication d'une thèse et de deux articles."
@@ -184,11 +175,39 @@
   ],
   "projects": [
     {
+      "name": "Clone de Tinder + système d'apprentissage automatique",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/tinder-swipe-learner",
+      "summary": "Création d'un clone de Tinder employant la librarie ci-dessous. Mon objectif est de créer mon propre système de recommendation.",
+      "highlights": [],
+      "keywords": [
+        "Python","API","Flask","TDD","Git"
+      ]
+    },
+    {
+      "name": "Wrapper en Python de l'API de Tinder",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/Tinder",
+      "summary": "Création d'une bibliothèque Python ayant pour but d'intéragir avec l'API de Tinder, suite à la rétro-ingénierie de celui-ci.",
+      "highlights": [],
+      "keywords": [
+        "Python","API","TDD","Git"
+      ]
+    },
+    {
+      "name": "Wrapper en Python du CLI de 1Password",
+      "position": "Creator",
+      "website": "https://github.com/SeanLF/1Password-cli-python-wrapper--to-transfer-documents-between-accounts",
+      "summary": "Ayant pour but l'implémentation d'une fonctionnalité manquante de 1Password: le transfert de documents entre deux comptes.",
+      "highlights": [],
+      "keywords": [
+        "Python","CLI","Git"
+      ]
+    },
+    {
       "name": "Jazzify",
       "position": "Créateur",
       "website": "https://jazzify.ca",
-      "startDate": "2015-01-01",
-      "endDate": "now",
       "summary": "Création d'un site Web pour moderniser le recrutement de nouveaux bénévoles pour le Festival de jazz d'Ottawa. Des milliers de candidats se sont présentés au cours des 5 dernières années.",
       "highlights": [],
       "keywords": [
@@ -199,8 +218,6 @@
       "name": "Site personnel",
       "position": "Créateur",
       "website": "https://seanfloyd.ca",
-      "startDate": "2016-03-30",
-      "endDate": "now",
       "summary": "",
       "highlights": [],
       "keywords": [
@@ -211,8 +228,6 @@
       "name": "Un système d'Active Learning pour la classification des textes",
       "position": "Chef d'équipe",
       "website": "https://github.com/SeanLF/CSI4900",
-      "startDate": "2016-10-01",
-      "endDate": "2016-12-10",
       "summary": "Projet de recherche de licence: Création d'un système d'Active Learning en ligne pour la classification des textes.",
       "highlights": [],
       "keywords": [
