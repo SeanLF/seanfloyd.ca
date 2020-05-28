@@ -200,8 +200,6 @@
       "name": "Jazzify",
       "position": "Creator",
       "website": "https://jazzify.ca",
-      "startDate": "2015-01-01",
-      "endDate": "now",
       "summary": "Created a website to modernize recruitment of new volunteers for the Ottawa Jazz Festival. Thousands of applicants in the 5 consecutive years it has been running.",
       "highlights": [],
       "keywords": [
@@ -212,8 +210,6 @@
       "name": "Personal website",
       "position": "Creator",
       "website": "https://seanfloyd.ca",
-      "startDate": "2016-03-30",
-      "endDate": "now",
       "summary": "",
       "highlights": [],
       "keywords": [
@@ -224,8 +220,6 @@
       "name": "An Active Learning System for Text Classification",
       "position": "Team Lead",
       "website": "https://github.com/SeanLF/CSI4900",
-      "startDate": "2016-10-01",
-      "endDate": "2016-12-10",
       "summary": "Undergraduate honours research project: Implemented a proof-of-concept for an online active-learner to handle text-classification.",
       "highlights": [],
       "keywords": [
