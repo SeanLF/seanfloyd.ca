@@ -1,8 +1,6 @@
 other_language: 'English'
 cv:
-  citizenship:
-    canada: 'Nationalité canadienne'
-    france: 'Nationalité française'
+  citizenship: 'Nationalité %1'
   time:
     now: 'auj.'
     year: 
@@ -20,6 +18,7 @@ cv:
     education: 'éducation'
     experience: 'expérience'
     publication: 'publications'
+    certification: 'certifications'
   education:
     study_type_in: ' en '
     gpa: 'Moyenne Générale'

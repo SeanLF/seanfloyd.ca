@@ -1,8 +1,6 @@
 other_language: 'Français'
 cv:
-  citizenship:
-    canada: 'Canadian citizenship'
-    france: 'French citizenship'
+  citizenship: '%1 citizenship'
   time:
     now: 'now'
     year: 
@@ -20,6 +18,7 @@ cv:
     education: 'education'
     experience: 'experience'
     publications: 'publications'
+    certifications: 'certifications'
   education:
     study_type_in: ' '
     gpa: 'GPA'

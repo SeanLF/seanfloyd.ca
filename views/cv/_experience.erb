@@ -1,15 +1,12 @@
 <% work = @json_cv['work'] %>
-<% volunteering = @json_cv['volunteer'] %>
-<% work_volunteering = [work, volunteering].flatten %>
-
 
 <section class="experience">
   <header>
     <h2><%= R18n.t.cv.headers.experience %></h2>
   </header>
   <div class="experience items">
-    <% if !work_volunteering.nil? and !work_volunteering.empty? %>
-      <% for job in work_volunteering %>
+    <% if !work.nil? and !work.empty? %>
+      <% for job in work %>
         <div class="experience item">
           <header>
             <h3>

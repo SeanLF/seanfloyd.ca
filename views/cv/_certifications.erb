@@ -1,0 +1,28 @@
+<% certifications = @json_cv['certifications'] %>
+<section class="certification">
+  <header>
+    <h2><%= R18n.t.cv.headers.certifications %></h2>
+  </header>
+  <div class="certification items">
+    <% if !certifications.nil? and !certifications.empty? %>
+      <% for certification in certifications %>
+        <div class="certification item">
+          <header>
+            <h3>
+              <em><%= certification['name'] %></em>,
+              <% if certification['website'] %>
+                <a href="<%= certification['website'] %>"><%= certification['institution'] %></a>
+              <% else %>
+                <%= certification['institution'] %>
+              <% end %>
+            </h3>
+            <%= erb :'cv/dates/_tenure', locals: {dates:{'end_date': certification['endDate']}} %>
+          </header>
+          <% unless certification['summary'].nil? && certification['summary'].empty? %>
+            <p class="summary"><%= certification['summary'] %></p>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+<style>
+  body {
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  header, main {
+    margin: auto;
+  }
+  input {
+    font-size: inherit;
+  }
+  input[type="submit"]{
+    cursor: pointer;
+  }
+  .actions input[type="submit"] {
+    text-transform: uppercase;
+    padding: 0.7rem 0.5rem;
+    flex: 1;
+  }
+  input[type="submit"] {
+    text-decoration: none;
+    color: var(--primary);
+    border: none;
+    margin: initial;
+    background-color: initial;
+  }
+  input[type="submit"]:hover {
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    background-color: rgba(158,158,158,.2);
+  }
+  input[type="submit"]:active {
+    box-shadow: 0 0 2px rgba(0,0,0,.18),0 2px 1px rgba(0,0,0,.09);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    background-color: rgba(158,158,158,.4);
+  }
+</style>
+<main>
+  <div class="card">
+    <div class="header">
+      Make your own version of my CV
+    </div>
+    <form action="/cv/make" method="post" class="make-cv" enctype="multipart/form-data">
+      <div class="text">
+        <p>
+          Import a JSON file, using the schema from <a href="https://jsonresume.org/schema/">JSON Resume</a>.
+        </p>
+        <div class="file">
+          <input type="file" name="json_file" id="json_file" required>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="action">
+          <input type="submit" value="Make CV">
+        </div>
+      </div>
+    </form>
+  </div>
+</main>

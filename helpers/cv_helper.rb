@@ -1,6 +1,6 @@
 module CVHelper
   def icons
-    {'GitHub' => 'github', 'StackOverflow' => 'stack-overflow', 'LinkedIn' => 'linkedin'}
+    { 'GitHub' => 'github', 'StackOverflow' => 'stack-overflow', 'LinkedIn' => 'linkedin' }
   end
 
   def cv_paths

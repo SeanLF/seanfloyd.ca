@@ -3,11 +3,20 @@
   <div class="main">
     <div>
       <h1 class="name">
-        <a href="<%= basics['website'] %>"><%= basics['name'] %></a>
-        
+        <% if basics['website'] %>
+          <a href="<%= basics['website'] %>"><%= basics['name'] %></a>
+        <% else %>
+          <%= basics['name'] %>
+        <% end %>
       </h1>
       <div class="subheader"><%= basics['label'] %></div>
-      <div class="chips"><span class="chip"><%= R18n.t.cv.citizenship.canada %></span><span class="chip"><%= R18n.t.cv.citizenship.france %></span></div>
+      <% unless basics['citizenships'].nil? && basics['citizenship'].empty? %>
+        <div class="chips">
+          <% basics['citizenship'].each do |citizenship| %>
+            <span class="chip"><%= R18n.t.cv.citizenship(citizenship) %></span>
+          <% end %>
+        </div>
+      <% end %>
     </div>
 
     <div class="picture hide-on-print">
@@ -27,7 +36,9 @@
       <div class="contact_details">
         <a href="/email"><i class="fa fa-envelope-o"></i><%= basics['email'] %></a>
         <a href="tel:<%= basics['phone'] %>"><i class="fa fa-phone"></i><%= basics['phone'] %></a>
-        <a href="tel:<%= basics['altPhone'] %>"><i class="fa fa-phone"></i><%= basics['altPhone'] %></a>
+        <% if basics['altPhone'] %>
+          <a href="tel:<%= basics['altPhone'] %>"><i class="fa fa-phone"></i><%= basics['altPhone'] %></a>
+        <% end %>
       </div>
     <% else %>
       <a href="/email"><i class="fa fa-envelope-o"></i><span class="show-on-print"><%= basics['email'] %></span></a>

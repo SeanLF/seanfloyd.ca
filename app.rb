@@ -22,11 +22,12 @@ end
 
 get '/cv' do
   return redirect cv_paths['fr'] if R18n.get.locale.code.include? 'fr'
-  cv()
+
+  cv
 end
 
 get '/:locale/cv' do
-  cv()
+  cv
 end
 
 def cv
@@ -37,7 +38,7 @@ def cv
 end
 
 get '/travel' do
-  @posts = read_posts()
+  @posts = read_posts
   @stylesheet_name = 'travel'
   erb :travel
 end
@@ -48,7 +49,7 @@ get '/travel/posts/*' do
 end
 
 get '/travel.rss' do
-  @posts = read_posts()
+  @posts = read_posts
   builder :rss
 end
 
@@ -58,4 +59,18 @@ end
 
 get '/emergency' do
   erb :emergency
+end
+
+get '/cv/make' do
+  @stylesheet_name = 'index'
+  erb :'cv/make'
+end
+
+post '/cv/make' do
+  redirect_to '/cv/make' unless params[:json_file]
+
+  @json_cv = JSON.parse(File.read(params[:json_file][:tempfile]))
+  @stylesheet_name = 'cv'
+  @show_contact_details = true
+  erb :'cv/cv'
 end
