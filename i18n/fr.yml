@@ -16,6 +16,7 @@ cv:
   headers:
     projects: 'projets'
     education: 'éducation'
+    skills: 'compétences'
     experience: 'expérience'
     publication: 'publications'
     certification: 'certifications'

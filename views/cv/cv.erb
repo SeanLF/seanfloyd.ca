@@ -3,6 +3,7 @@
 
   <%= erb :'cv/_basics' %>
   <%= erb :'cv/_education' unless @json_cv['education'].nil? %>
+  <%= erb :'cv/_skills' unless @json_cv['skills'].nil? %>
   <%= erb :'cv/_experience' unless @json_cv['work'].nil? %>
   <%= erb :'cv/_publications' unless @json_cv['publications'].nil? %>
   <%= erb :'cv/_projects' unless @json_cv['projects'].nil? %>

@@ -1,0 +1,21 @@
+<% skills = @json_cv['skills'] %>
+
+<section class="skills">
+  <header>
+    <h2><%= R18n.t.cv.headers.skills %></h2>
+  </header>
+  <div class="skills items">
+    <% unless skills.nil? %>
+      <% for skill in skills %>
+        <div class="skill item">
+          <strong class="title"><%= skill['name'] %></strong>
+          <div class="keywords" style="display: inline-block;">
+            <% for keyword in skill['values'] %>
+              <span class="keyword"><%= keyword %></span>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</section>
