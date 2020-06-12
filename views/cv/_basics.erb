@@ -9,7 +9,10 @@
           <%= basics['name'] %>
         <% end %>
       </h1>
-      <div class="subheader"><%= basics['label'] %></div>
+      <div class="subheader">
+        <%= basics['label'] %>
+        <%= basics['sublabel'] %>
+      </div>
       <% unless basics['citizenships'].nil? && basics['citizenship'].empty? %>
         <div class="chips">
           <% basics['citizenship'].each do |citizenship| %>
@@ -34,7 +37,7 @@
 
     <% if @show_contact_details %>
       <div class="contact_details">
-        <a href="/email"><i class="fa fa-envelope-o"></i><%= basics['email'] %></a>
+        <a href="mailto:<%= basics['email'] %>"><i class="fa fa-envelope-o"></i><%= basics['email'] %></a>
         <a href="tel:<%= basics['phone'] %>"><i class="fa fa-phone"></i><%= basics['phone'] %></a>
         <% if basics['altPhone'] %>
           <a href="tel:<%= basics['altPhone'] %>"><i class="fa fa-phone"></i><%= basics['altPhone'] %></a>

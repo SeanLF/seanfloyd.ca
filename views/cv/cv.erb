@@ -1,4 +1,9 @@
-<nav><a href="<%= change_cv_language_path %>"><%= R18n.t[:other_language] %></a></nav>
+<% unless @hide_change_lang %>
+  <nav>
+    <a href="<%= change_cv_language_path %>"><%= R18n.t[:other_language] %></a>
+  </nav>
+<% end %>
+
 <main>
 
   <%= erb :'cv/_basics' %>

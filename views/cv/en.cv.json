@@ -35,6 +35,13 @@
   },
   "work": [
     {
+      "company": "Blog",
+      "position": "Gap year around the world",
+      "website": "https://seanfloyd.ca/travel",
+      "startDate": "2019-06-12",
+      "endDate": "2020-03-19"
+    },
+    {
       "company": "D3M Networks | Teldio",
       "position": "Software Engineer",
       "website": "http://www.d3mnetworks.com/",
@@ -71,9 +78,9 @@
       "website": "https://etixnow.com",
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
-      "summary": "Developed an administration panel for low memory linux touchscreen Point Of Sale mini kiosks, that runs in custom-built WebKit QT browser.",
+      "summary": "Developed an administration panel for low memory linux touchscreen Point Of Sale mini kiosks.",
       "keywords": [
-        "HTML","JavaScript","CSS","QT browser","Linux"
+        "HTML","JavaScript","CSS","QT browser","Linux","Git"
       ]
     },
     {
@@ -104,7 +111,6 @@
       "studyType": "M.Sc.",
       "startDate": "2017-01-01",
       "endDate": "2019-06-13",
-      "gpa": "9.8/10",
       "courses": [
         "Data Mining and Concept Learning",
         "Distributed Databases",
@@ -120,7 +126,6 @@
       "studyType": "Honours B.Sc. (co-op)",
       "startDate": "2012-09-01",
       "endDate": "2016-12-20",
-      "gpa": "8.4/10",
       "courses": [
         "Information Retrieval",
         "Artificial Intelligence",
@@ -134,8 +139,8 @@
     {
       "name": "Soft Voting Windowing Ensembles for Learning from Partially Labelled Streams",
       "publisher": "ECML PKDD nfCMP",
-      "releaseDate": "2020-07-22",
-      "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
+      "releaseDate": "2020-06-11",
+      "website": "https://www.springer.com/us/book/9783030488604",
       "summary": "Short-form paper from thesis research, showcased at the ECML PKDD nfCMP 2019 workshop."
     },
     {
@@ -151,7 +156,7 @@
         "Investigation of the limits of non-selective self-training."
       ],
       "keywords": [
-        "Python","Ruby","Data Mining","Data Streams"
+        "Python","Ruby","Data Mining","Data Streams", "Scikit-learn", "Scikit-multiflow","Git"
       ]
     },
     {
@@ -159,7 +164,7 @@
       "publisher": "IEEE ICMLA",
       "releaseDate": "2017-12-18",
       "website": "https://ieeexplore.ieee.org/document/8260794/",
-      "summary": "Published a paper at the IEEE ICMLA 2017 conference. Acquired data from the Canadian Community Health Survey provided by Statistics Canada.",
+      "summary": "Published a paper at the IEEE ICMLA 2017 conference. Data provided by Statistics Canada.",
       "highlights": [],
       "keywords": [
         "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
@@ -204,7 +209,7 @@
       "summary": "Created a website to modernize recruitment of new volunteers for the Ottawa Jazz Festival. Thousands of applicants in the 5 consecutive years it has been running.",
       "highlights": [],
       "keywords": [
-        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","Continuous Integration","RSpec"
+        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","CI/CD","RSpec","Travis CI"
       ]
     },
     {
@@ -214,18 +219,32 @@
       "summary": "",
       "highlights": [],
       "keywords": [
-        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","Continuous Integration","Continuous Delivery","Git","JSON","Linux"
+        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","CI/CD","Git","JSON","Linux","RSpec","Circle CI","Code Climate"
       ]
     },
     {
       "name": "An Active Learning System for Text Classification",
       "position": "Team Lead",
       "website": "https://github.com/SeanLF/CSI4900",
-      "summary": "Undergraduate honours research project: Implemented a proof-of-concept for an online active-learner to handle text-classification.",
+      "summary": "Honours research project: Implemented a proof-of-concept for an online active-learner to handle text-classification.",
       "highlights": [],
       "keywords": [
-        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification"
+        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification","Scikit-learn"
       ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "values": ["Ruby", "Python", "SQL", "JavaScript", "C#", "\"CSS/SCSS\""]
+    },
+    {
+      "name": "Frameworks",
+      "values": ["Ruby on Rails", "Sinatra", "Flask", "Django", "VueJS"]
+    },
+    {
+      "name": "Misc.",
+      "values": ["Git", "Scikit-learn", "CI/CD", "RSpec"]
     }
   ]
 }

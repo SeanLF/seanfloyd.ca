@@ -30,10 +30,10 @@ get '/:locale/cv' do
   cv
 end
 
-def cv
-  @json_cv = JSON.parse(File.read("views/cv/#{R18n.get.locale.code}.cv.json"))
+def cv(source = "views/cv/#{R18n.get.locale.code}.cv.json")
+  @json_cv = JSON.parse(File.read(source))
   @stylesheet_name = 'cv'
-  @show_contact_details = !params[:with_contact_details].nil?
+  @show_contact_details ||= params.include? :with_contact_details
   erb :'cv/cv'
 end
 
@@ -69,8 +69,7 @@ end
 post '/cv/make' do
   redirect_to '/cv/make' unless params[:json_file]
 
-  @json_cv = JSON.parse(File.read(params[:json_file][:tempfile]))
-  @stylesheet_name = 'cv'
   @show_contact_details = true
-  erb :'cv/cv'
+  @hide_change_lang = true
+  cv(params[:json_file][:tempfile])
 end

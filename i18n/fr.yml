@@ -15,7 +15,7 @@ cv:
         n: '%1 mois'
   headers:
     projects: 'projets'
-    education: 'éducation'
+    education: 'formation'
     skills: 'compétences'
     experience: 'expérience'
     publication: 'publications'

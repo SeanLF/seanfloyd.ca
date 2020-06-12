@@ -180,6 +180,9 @@ section > header > h2 {
 }
 
 /* SKILLS & LANGUAGES */
+.skills-list {
+  display: flex;
+}
 .languages.item {
   display: inline-block;
 }

@@ -1,12 +1,11 @@
 {
   "basics": {
     "name": "Sean Floyd",
-    "label": "Bac+6 en Informatique, presque 2 ans d'expérience, 2 publications, bilingue",
+    "label": "Software Engineer & Data Scientist. ~2 ans d'expérience, anglais bilingue.",
     "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
     "citizenship": ["française", "canadienne"],
     "email": "seanfloyd@icloud.com",
-    "phone": "+1 (343) 882-4123",
-    "altPhone": "+33 (0)7 66 44 70 46",
+    "phone": "+33 (0)7 66 44 70 46",
     "website": "https://seanfloyd.ca",
     "location": {
       "address": "302-287 Metcalfe Street",
@@ -34,6 +33,13 @@
     ]
   },
   "work": [
+    {
+      "company": "Blog",
+      "position": "Tour du monde en solo",
+      "website": "https://seanfloyd.ca/travel",
+      "startDate": "2019-06-12",
+      "endDate": "2020-03-19"
+    },
     {
       "company": "D3M Networks | Teldio",
       "position": "Ingénieur logiciel",
@@ -64,13 +70,13 @@
     },
     {
       "company": "etixnow",
-      "position": "Contractant en Remote",
+      "position": "Consultant en Remote",
       "website": "https://etixnow.com",
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
-      "summary": "Développé un panneau d'administration pour les mini kiosques de point de vente à écran tactile linux à faible mémoire, qui s'exécute dans un navigateur WebKit QT personnalisé.",
+      "summary": "Développé un panneau d'administration pour les mini kiosques de point de vente linux à faible mémoire",
       "keywords": [
-        "HTML","JavaScript","CSS","QT browser","Linux"
+        "HTML","JavaScript","CSS","QT browser","Linux","Git"
       ]
     },
     {
@@ -117,7 +123,6 @@
       "studyType": "Bachelor (bac+4) avec stages coopératifs",
       "startDate": "2012-09-01",
       "endDate": "2016-12-20",
-      "gpa": "8.4/10",
       "courses": [
         "Récupération de l'information",
         "Intelligence artificielle",
@@ -125,25 +130,14 @@
         "Conception de systèmes temps réel"
       ],
       "summary": "Participé au programme d'enseignement coopératif, conduisant à 4 stages de quatre mois au cours du diplôme."
-    },
-    {
-      "institution": "Académie de Caen",
-      "website": "https://www.ac-caen.fr",
-      "area": "série scientifique",
-      "studyType": "Baccalauréat Général",
-      "startDate": "2010-09-01",
-      "endDate": "2012-06-10",
-      "gpa": "",
-      "courses": [],
-      "summary": ""
     }
   ],
   "publications": [
     {
       "name": "Ensembles de fenêtrage à vote 'soft' pour l'apprentissage à partir de flux de données partiellement étiquetées",
       "publisher": "ECML PKDD nfCMP",
-      "releaseDate": "2020-07-22",
-      "website": "http://www.di.uniba.it/~loglisci/NFMCP2019/NFMCP/nfMCP2019_paper_2.pdf",
+      "releaseDate": "2020-06-11",
+      "website": "https://www.springer.com/gp/book/9783030488604",
       "summary": "Document abrégé de ma recherche de thèse, présenté pendant l'atelier de la conférence ECML PKDD nfCMP 2019."
     },
     {
@@ -159,7 +153,7 @@
         "Enquête sur les limites de l'autoformation non sélective."
       ],
       "keywords": [
-        "Python","Ruby","Data Mining","Data Streams"
+        "Python","Ruby","Data Mining","Data Streams", "Scikit-learn", "Scikit-multiflow","Git"
       ]
     },
     {
@@ -212,7 +206,7 @@
       "summary": "Création d'un site Web pour moderniser le recrutement de nouveaux bénévoles pour le Festival de jazz d'Ottawa. Des milliers de candidats se sont présentés au cours des 5 dernières années.",
       "highlights": [],
       "keywords": [
-        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","Continuous Integration","RSpec"
+        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","Digital Ocean","Linux","Dokku","CI/CD","RSpec","Travis CI"
       ]
     },
     {
@@ -222,7 +216,7 @@
       "summary": "",
       "highlights": [],
       "keywords": [
-        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","Continuous Integration","Continuous Delivery","Git","JSON","Linux"
+        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","CI/CD","Git","JSON","Linux","RSpec","Circle CI","Code Climate"
       ]
     },
     {
@@ -232,8 +226,22 @@
       "summary": "Projet de recherche de licence: Création d'un système d'Active Learning en ligne pour la classification des textes.",
       "highlights": [],
       "keywords": [
-        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification"
+        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification","Scikit-learn"
       ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Langues",
+      "values": ["Ruby", "Python", "SQL", "JavaScript", "\"CSS/SCSS\""]
+    },
+    {
+      "name": "Frameworks",
+      "values": ["Ruby on Rails", "Sinatra", "Flask", "Django", "VueJS"]
+    },
+    {
+      "name": "Autre",
+      "values": ["Git", "Scikit-learn", "CI/CD", "RSpec"]
     }
   ]
 }
