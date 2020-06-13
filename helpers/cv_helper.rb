@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+## Provides helpers for the CV page
+
 module CVHelper
   def icons
     { 'GitHub' => 'github', 'StackOverflow' => 'stack-overflow', 'LinkedIn' => 'linkedin' }
@@ -9,7 +13,7 @@ module CVHelper
       'fr' => '/fr/cv'
     }
     unless request.env['QUERY_STRING'].nil?
-      for locale in R18n.get.available_locales.map(&:code)
+      R18n.get.available_locales.map(&:code).each do |locale|
         paths[locale] += "?#{request.env['QUERY_STRING']}"
       end
     end

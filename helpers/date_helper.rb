@@ -1,10 +1,11 @@
-require 'sinatra/r18n'
-include R18n::Helpers
+# frozen_string_literal: true
+
+##
+# Helper for formatting dates in CVs
 
 module DateHelper
-  def format_date_ymd(date)
-    date.strftime('%Y-%m-%d')
-  end
+  DAYS_IN_MONTH = 30
+  MONTHS_IN_YEAR = 12
 
   def parse_date(date)
     if date == 'now'
@@ -14,45 +15,28 @@ module DateHelper
     end
   end
 
-  def humanize_date(date)
-    if date == 'now'
-      R18n.t.cv.time.now
-    else
-      R18n.l(Date.parse(date), '%b %Y')
-    end
+  def format_date_ymd(date)
+    date = parse_date(date) if date.is_a? String
+    date.strftime('%Y-%m-%d')
   end
+
+  ##
+  # Gets the number of years and months between two dates.
+  # :args: start_date, end_date
+  # :yields: years, months
 
   def how_long(start_date, end_date)
-    distance_in_days = (parse_date(end_date) - parse_date(start_date)).to_f
-    how_long_in_words(distance_in_days)
+    distance_in_days = date_diff(start_date, end_date)
+    months, distance_in_days = distance_in_days.divmod(DAYS_IN_MONTH)
+    months += 1 if (distance_in_days / DAYS_IN_MONTH.to_f).round.positive?
+    months.divmod(MONTHS_IN_YEAR)
   end
 
-  # x month(s) OR x year(s) OR x year(s), x month(s)
-  def how_long_in_words(distance_in_days)
-    _DAYS_IN_YEAR = 365
-    distance_in_months = distance_in_months(distance_in_days)
-    if distance_in_months < 1
-      ''
-    elsif (distance_in_months < 12)
-      R18n.t.cv.time.month.count(distance_in_months)
-    else
-      years = (distance_in_days / _DAYS_IN_YEAR).round
-      distance_in_days -= years * _DAYS_IN_YEAR
-      length = R18n.t.cv.time.year.count(years)
-      months = how_long_in_words(distance_in_days)
-      if months.empty?
-        return length
-      end
-      length << ', ' << months
-    end
-  end
+  private
 
-  def distance_in_months(distance_in_days)
-    _DAYS_IN_MONTH = 30
-    (distance_in_days / _DAYS_IN_MONTH).round
-  end
-
-  def format_date_mdy_ordinalize(date)
-    date.strftime("%B #{date.day.ordinalize}, %Y")
+  def date_diff(start_date, end_date)
+    start_date = parse_date(start_date) if start_date.is_a? String
+    end_date = parse_date(end_date) if end_date.is_a? String
+    end_date - start_date
   end
 end

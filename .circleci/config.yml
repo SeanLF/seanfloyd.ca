@@ -1,11 +1,44 @@
-version: 2
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.0.0
+executors:
+  ruby:
+    docker:
+      - image: 'circleci/ruby:2.7.1'
 jobs:
   build:
-    machine:
-      enabled: true
+    executor: ruby
     working_directory: ~/seanfloyd.ca
     steps:
       - checkout
+  test:
+    executor: ruby
+    environment:
+      APP_ENV: test
+      RACK_ENV: test
+    steps:
+      - checkout
+      - ruby/install-deps:
+          with-cache: false
+      - run:
+          name: Lint with Rubocop
+          command: |
+            bundle exec rubocop
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            # download test reporter as a static binary
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          name: Code Climate before build
+          command: |
+            ./cc-test-reporter before-build
+      - ruby/rspec-test
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter after-build -t simplecov
   deploy:
     machine:
       enabled: true
@@ -22,12 +55,15 @@ jobs:
             git push -f dokku master
 workflows:
   version: 2
-  build-and-deploy:
+  build-test-and-deploy:
     jobs:
       - build
-      - deploy:
+      - test:
           requires:
             - build
+      - deploy:
+          requires:
+            - test
           filters:
             branches:
               only: master
