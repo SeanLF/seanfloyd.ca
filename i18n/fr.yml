@@ -1,26 +1,26 @@
-other_language: 'English'
+other_language: "English"
 cv:
-  citizenship: 'Nationalité %1'
+  citizenship: "Nationalité %1"
   time:
-    now: 'auj.'
-    year: 
+    now: "auj."
+    year:
       count: !!pl
-        0: '%1 ans'
-        1: '%1 an'
-        n: '%1 ans'
-    month: 
+        0: "%1 ans"
+        1: "%1 an"
+        n: "%1 ans"
+    month:
       count: !!pl
-        0: '%1 mois'
-        1: '%1 mois'
-        n: '%1 mois'
+        0: "%1 mois"
+        1: "%1 mois"
+        n: "%1 mois"
   headers:
-    projects: 'projets'
-    education: 'formation'
-    skills: 'compétences'
-    experience: 'expérience'
-    publication: 'publications'
-    certification: 'certifications'
+    projects: "projets"
+    education: "formation"
+    skills: "compétences"
+    experience: "expérience"
+    publication: "publications"
+    certification: "certifications"
   education:
-    study_type_in: ' en '
-    gpa: 'Moyenne Générale'
-    courses_taken: 'Cours'
+    study_type_in: " en "
+    gpa: "Moyenne Générale"
+    courses_taken: "Cours"
