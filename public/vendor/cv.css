@@ -191,6 +191,9 @@ section > header > h2 {
 .skills-list {
   display: flex;
 }
+.skill .title {
+  margin-right: 0.5rem;
+}
 .languages.item {
   display: inline-block;
 }
