@@ -1,6 +1,7 @@
 other_language: "Français"
 cv:
   citizenship: "%1 citizenship"
+  availability: "Availability"
   time:
     now: "now"
     year:

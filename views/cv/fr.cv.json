@@ -7,6 +7,7 @@
     "email": "seanfloyd@icloud.com",
     "phone": "+33 (0)7 66 44 70 46",
     "website": "https://seanfloyd.ca",
+    "availability": "https://calendly.com/seanlf",
     "location": {
       "address": "302-287 MacLaren Street",
       "postalCode": "K2P 0L9",
@@ -53,7 +54,13 @@
         "Amélioration des performances et du temps de réponse jusqu'à 50% après avoir découvert et corrigé de nombreuses requêtes N+1."
       ],
       "keywords": [
-        "Ruby","Rails","JavaScript","SQL","SCSS","Git","Marionette"
+        "Ruby",
+        "Rails",
+        "JavaScript",
+        "SQL",
+        "SCSS",
+        "Git",
+        "Marionette"
       ]
     },
     {
@@ -65,7 +72,13 @@
       "summary": "Conçu, développé et documenté un service web, une base de données et un tableau de bord pour la surveillance des journaux du système financier du Parlement ainsi qu'un quiz de phishing interactif.",
       "highlights": [],
       "keywords": [
-        "VB.NET","SQL","JavaScript","CSS", "knockout.js", "Bootstrap","IIS"
+        "VB.NET",
+        "SQL",
+        "JavaScript",
+        "CSS",
+        "knockout.js",
+        "Bootstrap",
+        "IIS"
       ]
     },
     {
@@ -75,9 +88,7 @@
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
       "summary": "Développé un panneau d'administration pour les mini kiosques de point de vente linux à faible mémoire",
-      "keywords": [
-        "HTML","JavaScript","CSS","QT browser","Linux","Git"
-      ]
+      "keywords": ["HTML", "JavaScript", "CSS", "QT browser", "Linux", "Git"]
     },
     {
       "company": "Conseil d'examen du prix des médicaments brevetés",
@@ -92,13 +103,10 @@
         "Amélioration de plus de 50% du temps de réponse de la génération d'un rapport, suite à de meilleures requêtes SQL et à une refactorisation.",
         "Résolution de 85% du backlog de produit (bogues et fonctionnalités)."
       ],
-      "keywords": [
-        "C#","JavaScript","CSS","SQL","TFS"
-      ]
+      "keywords": ["C#", "JavaScript", "CSS", "SQL", "TFS"]
     }
   ],
-  "volunteer": [
-  ],
+  "volunteer": [],
   "education": [
     {
       "institution": "Université d'Ottawa",
@@ -146,14 +154,20 @@
       "releaseDate": "2019-06-10",
       "website": "https://ruor.uottawa.ca/handle/10393/39273",
       "summary": "Recherche de thèse: Développement d'un algorithme d'apprentissage automatique d'ensembles, environ 160 fois plus rapide que les techniques de pointe actuelles, et d'une précision prédictive comparable. Les contributions comprennent: ",
-      "highlights":[
+      "highlights": [
         "Nouvelle approche du fenêtrage pour les ensembles,",
         "Modification d'un détecteur de dérive pour fonctionner sans aucune donnée étiquetée,",
         "Système de vote 'soft' pondéré pour les ensembles,",
         "Enquête sur les limites de l'autoformation non sélective."
       ],
       "keywords": [
-        "Python","Ruby","Data Mining","Data Streams", "Scikit-learn", "Scikit-multiflow","Git"
+        "Python",
+        "Ruby",
+        "Data Mining",
+        "Data Streams",
+        "Scikit-learn",
+        "Scikit-multiflow",
+        "Git"
       ]
     },
     {
@@ -164,7 +178,14 @@
       "summary": "Article publié à la conférence IEEE ICMLA 2017. Données provenant de l'ESCC par Statistique Canada.",
       "highlights": [],
       "keywords": [
-        "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
+        "Python",
+        "R",
+        "Latex",
+        "SQL",
+        "weka",
+        "sql-server",
+        "sql-server-data-tools",
+        "ssds"
       ]
     }
   ],
@@ -176,7 +197,13 @@
       "summary": "Création d'un clone de Tinder employant la librarie ci-dessous. Mon objectif est de créer mon propre système de recommendation.",
       "highlights": [],
       "keywords": [
-        "Vue.js","JavaScript","Python","API","Flask","TDD","Git"
+        "Vue.js",
+        "JavaScript",
+        "Python",
+        "API",
+        "Flask",
+        "TDD",
+        "Git"
       ]
     },
     {
@@ -185,9 +212,7 @@
       "website": "https://github.com/SeanLF/Tinder",
       "summary": "Création d'une bibliothèque Python ayant pour but d'intéragir avec l'API de Tinder, suite à la rétro-ingénierie de celui-ci.",
       "highlights": [],
-      "keywords": [
-        "Python","API","TDD","Git"
-      ]
+      "keywords": ["Python", "API", "TDD", "Git"]
     },
     {
       "name": "Wrapper en Python du CLI de 1Password",
@@ -195,9 +220,7 @@
       "website": "https://github.com/SeanLF/1Password-cli-python-wrapper--to-transfer-documents-between-accounts",
       "summary": "Ayant pour but l'implémentation d'une fonctionnalité manquante de 1Password: le transfert de documents entre deux comptes.",
       "highlights": [],
-      "keywords": [
-        "Python","CLI","Git"
-      ]
+      "keywords": ["Python", "CLI", "Git"]
     },
     {
       "name": "Jazzify",
@@ -206,7 +229,18 @@
       "summary": "Création d'un site Web pour moderniser le recrutement de nouveaux bénévoles pour le Festival de jazz d'Ottawa. Des milliers de candidats se sont présentés au cours des 5 dernières années.",
       "highlights": [],
       "keywords": [
-        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","Digital Ocean","Linux","Dokku","CI/CD","RSpec","Travis CI"
+        "Ruby",
+        "Ruby on Rails",
+        "JavaScript",
+        "SCSS",
+        "SQL",
+        "Git",
+        "Digital Ocean",
+        "Linux",
+        "Dokku",
+        "CI/CD",
+        "RSpec",
+        "Travis CI"
       ]
     },
     {
@@ -216,7 +250,18 @@
       "summary": "",
       "highlights": [],
       "keywords": [
-        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","CI/CD","Git","JSON","Linux","RSpec","Circle CI","Code Climate"
+        "Ruby",
+        "Sinatra",
+        "CSS",
+        "Digital Ocean",
+        "Dokku",
+        "CI/CD",
+        "Git",
+        "JSON",
+        "Linux",
+        "RSpec",
+        "Circle CI",
+        "Code Climate"
       ]
     },
     {
@@ -226,7 +271,14 @@
       "summary": "Projet de recherche de licence: Création d'un système d'Active Learning en ligne pour la classification des textes.",
       "highlights": [],
       "keywords": [
-        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification","Scikit-learn"
+        "Python",
+        "CSS",
+        "Git",
+        "Django",
+        "WebSockets",
+        "Active Learning",
+        "Text Classification",
+        "Scikit-learn"
       ]
     }
   ],

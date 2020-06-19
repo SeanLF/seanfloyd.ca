@@ -8,6 +8,7 @@
     "phone": "+1 (343) 882-4123",
     "altPhone": "+33 (0)7 66 44 70 46",
     "website": "https://seanfloyd.ca",
+    "availability": "https://calendly.com/seanlf",
     "location": {
       "address": "302-287 MacLaren Street",
       "postalCode": "K2P 0L9",
@@ -54,7 +55,13 @@
         "Improved performance and response time by up to 50% after discovering and fixing numerous N+1 queries."
       ],
       "keywords": [
-        "Ruby","Rails","JavaScript","SQL","SCSS","Git","Marionette"
+        "Ruby",
+        "Rails",
+        "JavaScript",
+        "SQL",
+        "SCSS",
+        "Git",
+        "Marionette"
       ]
     },
     {
@@ -69,7 +76,13 @@
         "Designed, architected and developed a single page application for cyber-security awereness month."
       ],
       "keywords": [
-        "VB.NET","SQL","JavaScript","CSS", "knockout.js", "Bootstrap","IIS"
+        "VB.NET",
+        "SQL",
+        "JavaScript",
+        "CSS",
+        "knockout.js",
+        "Bootstrap",
+        "IIS"
       ]
     },
     {
@@ -79,9 +92,7 @@
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
       "summary": "Developed an administration panel for low memory linux touchscreen Point Of Sale mini kiosks.",
-      "keywords": [
-        "HTML","JavaScript","CSS","QT browser","Linux","Git"
-      ]
+      "keywords": ["HTML", "JavaScript", "CSS", "QT browser", "Linux", "Git"]
     },
     {
       "company": "Patented Medicine Prices Review Board",
@@ -96,13 +107,10 @@
         "Refactored a report and achieved over 50% speedup in part due to better SQL queries.",
         "Resolved 85% of bugs and features in the product backlog."
       ],
-      "keywords": [
-        "C#","JavaScript","CSS","SQL","TFS"
-      ]
+      "keywords": ["C#", "JavaScript", "CSS", "SQL", "TFS"]
     }
   ],
-  "volunteer": [
-  ],
+  "volunteer": [],
   "education": [
     {
       "institution": "University of Ottawa",
@@ -149,14 +157,20 @@
       "releaseDate": "2019-06-10",
       "website": "https://ruor.uottawa.ca/handle/10393/39273",
       "summary": "Thesis research: Developed an ensemble machine-learning algorithm that was roughly 160 times faster than current state of the art techniques, and achieved comparable predictive accuracy. Contributions include:",
-      "highlights":[
+      "highlights": [
         "Novel windowing approach for ensembles",
         "Extended drift detector to work without any labelled data",
         "Weighted soft voting scheme for ensembles",
         "Investigation of the limits of non-selective self-training."
       ],
       "keywords": [
-        "Python","Ruby","Data Mining","Data Streams", "Scikit-learn", "Scikit-multiflow","Git"
+        "Python",
+        "Ruby",
+        "Data Mining",
+        "Data Streams",
+        "Scikit-learn",
+        "Scikit-multiflow",
+        "Git"
       ]
     },
     {
@@ -167,7 +181,14 @@
       "summary": "Published a paper at the IEEE ICMLA 2017 conference. Data provided by Statistics Canada.",
       "highlights": [],
       "keywords": [
-        "Python","R","Latex","SQL","weka","sql-server","sql-server-data-tools","ssds"
+        "Python",
+        "R",
+        "Latex",
+        "SQL",
+        "weka",
+        "sql-server",
+        "sql-server-data-tools",
+        "ssds"
       ]
     }
   ],
@@ -179,7 +200,13 @@
       "summary": "Built a Tinder web app clone that interacts with the library written below. My objective is to build my own machine learning recommender system.",
       "highlights": [],
       "keywords": [
-        "Vue.js","JavaScript","Python","API","Flask","TDD","Git"
+        "Vue.js",
+        "JavaScript",
+        "Python",
+        "API",
+        "Flask",
+        "TDD",
+        "Git"
       ]
     },
     {
@@ -188,9 +215,7 @@
       "website": "https://github.com/SeanLF/Tinder",
       "summary": "Reverse-engineered Tinder's API and wrote a Python wrapper to interact with it.",
       "highlights": [],
-      "keywords": [
-        "Python","API","TDD","Git"
-      ]
+      "keywords": ["Python", "API", "TDD", "Git"]
     },
     {
       "name": "1Password CLI Python wrapper",
@@ -198,9 +223,7 @@
       "website": "https://github.com/SeanLF/1Password-cli-python-wrapper--to-transfer-documents-between-accounts",
       "summary": "Built a python wrapper to implement a missing feature in 1Password: transfering documents between accounts.",
       "highlights": [],
-      "keywords": [
-        "Python","API","CLI","Git"
-      ]
+      "keywords": ["Python", "API", "CLI", "Git"]
     },
     {
       "name": "Jazzify",
@@ -209,7 +232,18 @@
       "summary": "Created a website to modernize recruitment of new volunteers for the Ottawa Jazz Festival. Thousands of applicants in the 5 consecutive years it has been running.",
       "highlights": [],
       "keywords": [
-        "Ruby","Ruby on Rails","JavaScript","SCSS","SQL","Git","DigitalOcean","Linux","Dokku","CI/CD","RSpec","Travis CI"
+        "Ruby",
+        "Ruby on Rails",
+        "JavaScript",
+        "SCSS",
+        "SQL",
+        "Git",
+        "DigitalOcean",
+        "Linux",
+        "Dokku",
+        "CI/CD",
+        "RSpec",
+        "Travis CI"
       ]
     },
     {
@@ -219,7 +253,18 @@
       "summary": "",
       "highlights": [],
       "keywords": [
-        "Ruby","Sinatra","CSS","Digital Ocean","Dokku","CI/CD","Git","JSON","Linux","RSpec","Circle CI","Code Climate"
+        "Ruby",
+        "Sinatra",
+        "CSS",
+        "Digital Ocean",
+        "Dokku",
+        "CI/CD",
+        "Git",
+        "JSON",
+        "Linux",
+        "RSpec",
+        "Circle CI",
+        "Code Climate"
       ]
     },
     {
@@ -229,7 +274,14 @@
       "summary": "Honours research project: Implemented a proof-of-concept for an online active-learner to handle text-classification.",
       "highlights": [],
       "keywords": [
-        "Python","CSS","Git","Django","WebSockets","Active Learning","Text Classification","Scikit-learn"
+        "Python",
+        "CSS",
+        "Git",
+        "Django",
+        "WebSockets",
+        "Active Learning",
+        "Text Classification",
+        "Scikit-learn"
       ]
     }
   ],

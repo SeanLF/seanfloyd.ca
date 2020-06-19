@@ -42,8 +42,14 @@
         <% if basics['altPhone'] %>
           <a href="tel:<%= basics['altPhone'] %>"><i class="fa fa-phone"></i><%= basics['altPhone'] %></a>
         <% end %>
+        <% if basics['availability'] %>  
+          <a href="/availability"><i class="fa fa-calendar"></i><%= R18n.t.cv.availability %></a>
+        <% end %>
       </div>
     <% else %>
+      <% if basics['availability'] %>  
+          <a href="/availability"><i class="fa fa-calendar"></i><span class="show-on-print"><%= R18n.t.cv.availability %></span></a>
+        <% end %>
       <a href="/email"><i class="fa fa-envelope-o"></i><span class="show-on-print"><%= basics['email'] %></span></a>
     <% end %>
   </div>
