@@ -69,6 +69,10 @@ class App < Sinatra::Application
     redirect 'mailto:seanlouisfloyd@gmail.com'
   end
 
+  get %r{(/(availability|disponibilite))} do
+    redirect 'https://calendly.com/seanlf'
+  end
+
   get '/emergency' do
     erb :emergency
   end

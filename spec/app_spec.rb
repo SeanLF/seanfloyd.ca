@@ -115,4 +115,24 @@ describe App do
       expect(last_response.body).to include('expérience')
     end
   end
+
+  describe 'Get availability' do
+    context 'french path' do
+      it 'redirects to calendly' do
+        get '/availability'
+
+        expect(last_response.status).to eq(302)
+        expect(last_response.location).to include('https://calendly.com/seanlf')
+      end
+    end
+
+    context 'english path' do
+      it 'redirects to calendly' do
+        get '/disponibilite'
+
+        expect(last_response.status).to eq(302)
+        expect(last_response.location).to include('https://calendly.com/seanlf')
+      end
+    end
+  end
 end
