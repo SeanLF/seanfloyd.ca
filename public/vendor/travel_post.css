@@ -1,18 +1,18 @@
-html{
+html {
   --primary: hsl(217, 71%, 53%);
   --primary-light: hsla(217, 71%, 53%, 0.14);
   --background: hsl(0, 0%, 96%);
-  --border-color: #E6E6E6;
+  --border-color: #e6e6e6;
   --background-card: hsl(0, 0%, 100%);
   --text-color-dark: hsl(0, 0%, 21%);
   --text-color-light: hsl(0, 0%, 96%);
-  --box-shadow-a: rgba(0,0,0,0.19);
-  --box-shadow-b: rgba(0,0,0,0.23);
-  --secondary:  hsl(48, 100%, 67%) ;
+  --box-shadow-a: rgba(0, 0, 0, 0.19);
+  --box-shadow-b: rgba(0, 0, 0, 0.23);
+  --secondary: hsl(48, 100%, 67%);
 }
 
 @media (prefers-color-scheme: dark) {
-  html{
+  html {
     --background-card: #1d1d1d;
     --background: #121212;
     --border-color: var(--background);
@@ -21,7 +21,7 @@ html{
   }
 }
 
-body{
+body {
   font-family: sans-serif;
   color: var(--text-color-dark);
   background-color: var(--background);
@@ -38,20 +38,20 @@ main {
 
 #container {
   max-width: 800px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
 a,
 a:visited {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 700
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
-    text-decoration: underline
+  text-decoration: underline;
 }

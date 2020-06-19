@@ -1,4 +1,4 @@
-html{
+html {
   --primary: hsl(217, 71%, 53%);
   --primary-light: hsla(217, 71%, 53%, 0.14);
   --background: hsl(0, 0%, 96%);
@@ -6,13 +6,13 @@ html{
   --background-card: hsl(0, 0%, 100%);
   --text-color-dark: hsl(0, 0%, 21%);
   --text-color-light: hsl(0, 0%, 96%);
-  --box-shadow-a: rgba(0,0,0,0.19);
-  --box-shadow-b: rgba(0,0,0,0.23);
-  --secondary:  hsl(48, 100%, 67%) ;
+  --box-shadow-a: rgba(0, 0, 0, 0.19);
+  --box-shadow-b: rgba(0, 0, 0, 0.23);
+  --secondary: hsl(48, 100%, 67%);
 }
 
 @media (prefers-color-scheme: dark) {
-  html{
+  html {
     --background-card: #1d1d1d;
     --background: #121212;
     --border-color: var(--background);
@@ -21,13 +21,14 @@ html{
   }
 }
 
-body{
+body {
   font-family: sans-serif;
   color: var(--text-color-dark);
   background-color: var(--background);
 }
 
-h1, h4{
+h1,
+h4 {
   padding-left: 1rem;
 }
 
@@ -79,13 +80,14 @@ h1, h4{
   flex-grow: 1;
 }
 
-.text, .date {
+.text,
+.date {
   flex: 1;
   padding: 1rem;
   line-height: 2;
 }
 
-.date{
+.date {
   padding: 0rem 1rem;
   background: var(--primary-light);
 }
@@ -95,7 +97,8 @@ h1, h4{
   line-height: 1.5;
 }
 
-.actions, .details {
+.actions,
+.details {
   border-top: 1px solid var(--border-color);
   display: flex;
   flex-flow: row nowrap;
@@ -114,18 +117,23 @@ h1, h4{
   text-transform: uppercase;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: var(--primary);
 }
 
 a:hover {
-  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-  background-color: rgba(158,158,158,.2);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(158, 158, 158, 0.2);
 }
 
 a:active {
-  box-shadow: 0 0 2px rgba(0,0,0,.18),0 2px 1px rgba(0,0,0,.09);
-  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-  background-color: rgba(158,158,158,.4);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18), 0 2px 1px rgba(0, 0, 0, 0.09);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(158, 158, 158, 0.4);
 }

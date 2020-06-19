@@ -1,5 +1,5 @@
 /* VARIABLES */
-html{
+html {
   --primary: hsl(217, 71%, 53%);
   --primary-light: hsla(217, 71%, 53%, 0.14);
   --background: hsl(0, 0%, 96%);
@@ -9,9 +9,9 @@ html{
   --text-color-dark: hsl(0, 0%, 21%);
   --text-color-dark-less-important: hsl(0, 0%, 45%);
   --text-color-light: hsl(0, 0%, 96%);
-  --box-shadow-a: rgba(0,0,0,0.19);
-  --box-shadow-b: rgba(0,0,0,0.23);
-  --secondary:  hsl(48, 100%, 67%) ;
+  --box-shadow-a: rgba(0, 0, 0, 0.19);
+  --box-shadow-b: rgba(0, 0, 0, 0.23);
+  --secondary: hsl(48, 100%, 67%);
   --text-color-tag: var(--primary);
   --background-tag: var(--primary-light);
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -24,14 +24,14 @@ html{
 }
 
 @media (prefers-color-scheme: dark) {
-  html{
+  html {
     --background-card: hsl(0, 0%, 11%);
     --background: hsl(0, 0%, 7%);
     --border-color: hsl(0, 0%, 45%);
     --text-color-dark: hsl(0, 0%, 89%);
     --text-color-light: hsl(0, 0%, 21%);
     --border-color-card: var(--background-card);
-}
+  }
 }
 
 /* GLOBAL */
@@ -40,11 +40,11 @@ a {
   color: var(--primary);
   text-decoration: none;
 }
-.fa::after{
+.fa::after {
   margin-right: 0.3rem;
-  content: '';
+  content: "";
 }
-.chips .chip{
+.chips .chip {
   margin-right: 0.5rem;
 }
 body {
@@ -52,7 +52,7 @@ body {
 }
 
 /* LAYOUT */
-nav{
+nav {
   margin: auto;
   text-align: center;
 }
@@ -68,7 +68,7 @@ main > * {
   padding-right: 5rem;
 }
 main > *:first-child {
-  padding-top: 5rem;  
+  padding-top: 5rem;
 }
 main > *:last-child {
   padding-bottom: 5rem;
@@ -82,7 +82,7 @@ header.basics > .main {
 header.basics > .main > div:first-child {
   flex: 99;
 }
-header .subheader{
+header .subheader {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -102,18 +102,18 @@ header.basics .picture > img {
   vertical-align: bottom;
 }
 .me a {
-  content: '';
+  content: "";
   padding-right: 0.3rem;
 }
-.show-on-print{
+.show-on-print {
   display: none;
   visibility: hidden;
 }
 address > span::after {
-  content: ','
+  content: ",";
 }
 address > span:last-child::after {
-  content: ' '
+  content: " ";
 }
 
 /* SECTIONS */
@@ -135,44 +135,52 @@ section > header > h2 {
   flex: 2;
   flex-wrap: wrap;
 }
-.item .tenure, .item .tenure div {
+.item .tenure,
+.item .tenure div {
   flex: 1;
   display: inline-block;
   text-align: right;
 }
 
-.start-date, .end-date{
+.start-date,
+.end-date {
   display: inline-block;
 }
 .item .tenure .duration {
   color: var(--text-color-dark-less-important);
 }
-.item .summary, .item .highlights, .chips {
+.item .summary,
+.item .highlights,
+.chips {
   margin: 0.3rem 0;
 }
-.item .keywords .keyword, .languages.item, .courses.item, .chip {
+.item .keywords .keyword,
+.languages.item,
+.courses.item,
+.chip {
   border: 1px solid var(--background-tag);
   background-color: var(--background-tag);
   color: var(--text-color-tag);
   display: inline-block;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   padding: 0.1rem 0.1rem;
   margin: 0.1rem 0;
   font-size: 0.8rem;
 }
 .education .gpa span::after {
-  content: ': ';
+  content: ": ";
   padding: 0rem;
 }
-.courses, .courses .item{
+.courses,
+.courses .item {
   display: inline;
   align-items: center;
 }
-.courses-taken{
+.courses-taken {
   display: inline-block;
 }
-.courses-taken::after{
-  content: ': ';
+.courses-taken::after {
+  content: ": ";
   padding: 0;
 }
 .education .courses-taken {
@@ -187,8 +195,8 @@ section > header > h2 {
   display: inline-block;
 }
 
-@media (max-width:700px) {
-  body{
+@media (max-width: 700px) {
+  body {
     background-color: initial;
   }
   body > main {
@@ -199,7 +207,7 @@ section > header > h2 {
     padding-right: initial;
     margin: 1rem;
   }
-  header.basics .picture{
+  header.basics .picture {
     display: none;
     visibility: hidden;
   }
@@ -210,11 +218,11 @@ section > header > h2 {
   }
 }
 @media print {
-  .show-on-print{
+  .show-on-print {
     display: initial;
     visibility: initial;
   }
-  .hide-on-print{
+  .hide-on-print {
     display: none;
     visibility: hidden;
   }
@@ -225,7 +233,7 @@ section > header > h2 {
     text-decoration: underline;
   }
   /* LAYOUT */
-  nav{
+  nav {
     display: none;
     visibility: hidden;
   }
@@ -242,7 +250,7 @@ section > header > h2 {
     padding-right: initial;
   }
   main > *:first-child {
-    padding-top: initial;  
+    padding-top: initial;
   }
   main > *:last-child {
     padding-bottom: initial;
