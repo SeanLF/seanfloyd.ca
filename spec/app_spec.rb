@@ -135,4 +135,12 @@ describe App do
       end
     end
   end
+
+  describe 'Check if app is running' do
+    it 'succeeds' do
+      get '/check'
+
+      expect(last_response.body).to include('itworks')
+    end
+  end
 end

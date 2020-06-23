@@ -90,6 +90,10 @@ class App < Sinatra::Application
     cv(params[:json_file][:tempfile])
   end
 
+  get '/check' do
+    'itworks'
+  end
+
   not_found do
     redirect '/404.html'
   end
