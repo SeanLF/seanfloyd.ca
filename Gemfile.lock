@@ -27,7 +27,7 @@ GEM
     parser (2.7.1.3)
       ast (~> 2.4.0)
     r18n-core (4.0.0)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-cache (1.12.0)
       rack (>= 0.4)
     rack-protection (2.0.8.1)
