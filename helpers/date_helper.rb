@@ -27,6 +27,8 @@ module DateHelper
 
   def how_long(start_date, end_date)
     distance_in_days = date_diff(start_date, end_date)
+    return [0, 0] unless distance_in_days.positive?
+
     months, distance_in_days = distance_in_days.divmod(DAYS_IN_MONTH)
     months += 1 if (distance_in_days / DAYS_IN_MONTH.to_f).round.positive?
     months.divmod(MONTHS_IN_YEAR)

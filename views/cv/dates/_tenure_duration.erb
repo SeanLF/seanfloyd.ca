@@ -1,3 +1,7 @@
-<div class="duration">
-  <span class="duration">(<%= how_long_in_words(how_long(start_date, end_date)) %>)</span>
-</div>
+<% how_long = how_long_in_words(how_long(start_date, end_date)) %>
+
+<% unless how_long.empty? %>
+  <div class="duration">
+    <span class="duration">(<%= how_long %>)</span>
+  </div>
+<% end %>
