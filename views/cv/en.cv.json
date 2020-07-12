@@ -3,7 +3,10 @@
     "name": "Sean Floyd",
     "label": "M.Sc./B.Sc. in Computer Science, 1.5+ years experience, 2 publications, bilingual",
     "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
-    "citizenship": ["Canadian", "French"],
+    "citizenship": [
+      "Canadian",
+      "French"
+    ],
     "email": "seanfloyd@icloud.com",
     "phone": "+1 (343) 882-4123",
     "altPhone": "+33 (0)7 66 44 70 46",
@@ -92,7 +95,14 @@
       "startDate": "2015-07-15",
       "endDate": "2015-08-30",
       "summary": "Developed an administration panel for low memory linux touchscreen Point Of Sale mini kiosks.",
-      "keywords": ["HTML", "JavaScript", "CSS", "QT browser", "Linux", "Git"]
+      "keywords": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "QT browser",
+        "Linux",
+        "Git"
+      ]
     },
     {
       "company": "Patented Medicine Prices Review Board",
@@ -107,7 +117,13 @@
         "Refactored a report and achieved over 50% speedup in part due to better SQL queries.",
         "Resolved 85% of bugs and features in the product backlog."
       ],
-      "keywords": ["C#", "JavaScript", "CSS", "SQL", "TFS"]
+      "keywords": [
+        "C#",
+        "JavaScript",
+        "CSS",
+        "SQL",
+        "TFS"
+      ]
     }
   ],
   "volunteer": [],
@@ -215,7 +231,12 @@
       "website": "https://github.com/SeanLF/Tinder",
       "summary": "Reverse-engineered Tinder's API and wrote a Python wrapper to interact with it.",
       "highlights": [],
-      "keywords": ["Python", "API", "TDD", "Git"]
+      "keywords": [
+        "Python",
+        "API",
+        "TDD",
+        "Git"
+      ]
     },
     {
       "name": "1Password CLI Python wrapper",
@@ -223,7 +244,12 @@
       "website": "https://github.com/SeanLF/1Password-cli-python-wrapper--to-transfer-documents-between-accounts",
       "summary": "Built a python wrapper to implement a missing feature in 1Password: transfering documents between accounts.",
       "highlights": [],
-      "keywords": ["Python", "API", "CLI", "Git"]
+      "keywords": [
+        "Python",
+        "API",
+        "CLI",
+        "Git"
+      ]
     },
     {
       "name": "Jazzify",
@@ -288,15 +314,33 @@
   "skills": [
     {
       "name": "Languages",
-      "values": ["Ruby", "Python", "SQL", "JavaScript", "C#", "\"CSS/SCSS\""]
+      "values": [
+        "Ruby",
+        "Python",
+        "SQL",
+        "JavaScript",
+        "C#",
+        "\"CSS/SCSS\""
+      ]
     },
     {
       "name": "Frameworks",
-      "values": ["Ruby on Rails", "Sinatra", "Flask", "Django", "VueJS"]
+      "values": [
+        "Ruby on Rails",
+        "Sinatra",
+        "Flask",
+        "Django",
+        "VueJS"
+      ]
     },
     {
       "name": "Misc.",
-      "values": ["Git", "Scikit-learn", "CI/CD", "RSpec"]
+      "values": [
+        "Git",
+        "Scikit-learn",
+        "CI/CD",
+        "RSpec"
+      ]
     }
   ]
 }
