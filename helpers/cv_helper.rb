@@ -27,4 +27,8 @@ module CVHelper
       cv_paths['en']
     end
   end
+
+  def tenure_duration(how_long)
+    how_long.any?(&:negative?) ? [0, 0] : how_long
+  end
 end

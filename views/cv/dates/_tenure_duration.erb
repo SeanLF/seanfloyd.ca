@@ -1,4 +1,4 @@
-<% how_long = how_long_in_words(how_long(start_date, end_date)) %>
+<% how_long = how_long_in_words(tenure_duration(how_long(start_date, end_date))) %>
 
 <% unless how_long.empty? %>
   <div class="duration">
