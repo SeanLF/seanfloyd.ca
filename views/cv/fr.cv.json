@@ -38,6 +38,13 @@
   },
   "work": [
     {
+      "company": "Hivebrite",
+      "position": "Back-End Engineer",
+      "website": "https://hivebrite.com",
+      "startDate": "2020-08-03",
+      "endDate": "now"
+    },
+    {
       "company": "Blog",
       "position": "Tour du monde en solo",
       "website": "https://seanfloyd.ca/travel",
@@ -46,7 +53,7 @@
     },
     {
       "company": "D3M Networks | Teldio",
-      "position": "Ingénieur logiciel",
+      "position": "Full-Stack Engineer",
       "website": "http://www.d3mnetworks.com/",
       "startDate": "2016-05-01",
       "endDate": "2016-08-30",
@@ -68,7 +75,7 @@
     },
     {
       "company": "Chambre des Communes Canada",
-      "position": "Ingénieur logiciel",
+      "position": "Software Engineer",
       "website": "https://parl.ca",
       "startDate": "2015-09-01",
       "endDate": "2015-12-15",
@@ -102,7 +109,7 @@
     },
     {
       "company": "Conseil d'examen du prix des médicaments brevetés",
-      "position": "Analyste Programmeur",
+      "position": "Full-Stack Engineer",
       "website": "https://www.canada.ca/fr/examen-prix-medicaments-brevetes.html",
       "startDate": "2014-05-01",
       "endDate": "2015-04-30",

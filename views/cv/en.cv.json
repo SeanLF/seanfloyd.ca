@@ -39,6 +39,13 @@
   },
   "work": [
     {
+      "company": "Hivebrite",
+      "position": "Back-End Engineer",
+      "website": "https://hivebrite.com",
+      "startDate": "2020-08-03",
+      "endDate": "now"
+    },
+    {
       "company": "Blog",
       "position": "Gap year around the world",
       "website": "https://seanfloyd.ca/travel",
@@ -47,7 +54,7 @@
     },
     {
       "company": "D3M Networks | Teldio",
-      "position": "Software Engineer",
+      "position": "Full-Stack Engineer",
       "website": "http://www.d3mnetworks.com/",
       "startDate": "2016-05-01",
       "endDate": "2016-08-30",
@@ -106,7 +113,7 @@
     },
     {
       "company": "Patented Medicine Prices Review Board",
-      "position": "Programmer Analyst",
+      "position": "Full-Stack Engineer",
       "website": "https://www.canada.ca/en/patented-medicine-prices-review.html",
       "startDate": "2014-05-01",
       "endDate": "2015-04-30",
