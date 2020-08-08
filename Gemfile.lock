@@ -18,7 +18,7 @@ GEM
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     json (2.3.0)
-    kramdown (2.2.1)
+    kramdown (2.3.0)
       rexml
     minitest (5.14.1)
     mustermann (1.1.1)
