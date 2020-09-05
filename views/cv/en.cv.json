@@ -43,7 +43,27 @@
       "position": "Back-End Engineer",
       "website": "https://hivebrite.com",
       "startDate": "2020-08-03",
-      "endDate": "now"
+      "endDate": "now",
+      "highlights": [
+        "Improve back-end features and stability",
+        "Develop integrations with 3rd party software (Webhooks, API, deep integrations)",
+        "Design, develop, test and implement new product features"
+      ],
+      "keywords": [
+        "Ruby",
+        "Rails",
+        "Elasticsearch",
+        "Sidekiq",
+        "Go",
+        "React JS",
+        "RSpec",
+        "Cucumber",
+        "Docker",
+        "Semaphore CI",
+        "Git",
+        "SQL",
+        "TDD"
+      ]
     },
     {
       "company": "Blog",
