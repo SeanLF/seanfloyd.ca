@@ -13,13 +13,13 @@ describe TranslationHelper do
     context 'regular date' do
       subject { humanize_date(date) }
 
-      it { is_expected.to eq(humanized_date_string) }
+      it { is_expected.to(eq(humanized_date_string)) }
     end
 
     context 'today' do
       subject { humanize_date(today) }
 
-      it { is_expected.to eq(now) }
+      it { is_expected.to(eq(now)) }
     end
   end
 
@@ -27,7 +27,7 @@ describe TranslationHelper do
     context 'regular date' do
       subject { format_date_mdy_ordinalize(date) }
 
-      it { is_expected.to eq('June 1st, 2020') }
+      it { is_expected.to(eq('June 1st, 2020')) }
     end
   end
 end

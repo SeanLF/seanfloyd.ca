@@ -3,9 +3,9 @@
 require './app'
 require 'rack/cache'
 
-use Rack::Cache,
+use(Rack::Cache,
     metastore: 'file:/var/cache/rack/meta',
     entitystore: 'file:/var/cache/rack/body',
-    verbose: true
+    verbose: true)
 
-run App
+run(App)

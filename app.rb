@@ -29,7 +29,7 @@ class App < Sinatra::Application
   end
 
   get '/cv' do
-    return redirect cv_paths['fr'] if R18n.get.locale.code.include? 'fr'
+    return redirect(cv_paths['fr']) if R18n.get.locale.code.include?('fr')
 
     cv
   end
@@ -41,8 +41,8 @@ class App < Sinatra::Application
   def cv(source = "views/cv/#{R18n.get.locale.code}.cv.json")
     @json_cv = JSON.parse(File.read(source))
     @stylesheet_name = 'cv'
-    @show_contact_details ||= params.include? :with_contact_details
-    erb :'cv/cv'
+    @show_contact_details ||= params.include?(:with_contact_details)
+    erb(:'cv/cv')
   end
 
   get '/travel' do
@@ -83,7 +83,7 @@ class App < Sinatra::Application
   end
 
   post '/cv/make' do
-    return redirect '/cv/make' unless params[:json_file]
+    return redirect('/cv/make') unless params[:json_file]
 
     @show_contact_details = true
     @hide_change_lang = true

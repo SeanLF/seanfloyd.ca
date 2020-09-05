@@ -7,10 +7,10 @@ describe App do
     it 'displays home page' do
       get '/'
 
-      expect(last_response.body).to include('Sean Floyd')
-      expect(last_response.body).to include('CV')
-      expect(last_response.body).to include('GitHub profile')
-      expect(last_response.body).to include('/email')
+      expect(last_response.body).to(include('Sean Floyd'))
+      expect(last_response.body).to(include('CV'))
+      expect(last_response.body).to(include('GitHub profile'))
+      expect(last_response.body).to(include('/email'))
     end
   end
 
@@ -18,8 +18,8 @@ describe App do
     it 'displays travel page' do
       get '/travel'
 
-      expect(last_response.body).to include('Travel Log')
-      expect(last_response.body).to include('Photos')
+      expect(last_response.body).to(include('Travel Log'))
+      expect(last_response.body).to(include('Photos'))
     end
   end
 
@@ -30,8 +30,8 @@ describe App do
       travel_post_url = %r(/travel/posts/\d{4}-\d{2}-\d{2}).match(last_response.body)
 
       unless travel_post_url.nil?
-        get travel_post_url[0]
-        expect(last_response.body).to include('Back')
+        get(travel_post_url[0])
+        expect(last_response.body).to(include('Back'))
       end
     end
   end
@@ -40,21 +40,21 @@ describe App do
     it 'displays the CV in English' do
       get '/cv'
 
-      expect(last_response.body).to include('Français')
-      expect(last_response.body).to include('Sean Floyd')
-      expect(last_response.body).to include('https://github.com/SeanLF')
-      expect(last_response.body).to include('education')
-      expect(last_response.body).to include('experience')
+      expect(last_response.body).to(include('Français'))
+      expect(last_response.body).to(include('Sean Floyd'))
+      expect(last_response.body).to(include('https://github.com/SeanLF'))
+      expect(last_response.body).to(include('education'))
+      expect(last_response.body).to(include('experience'))
     end
 
     it 'displays the CV in French' do
       get '/fr/cv'
 
-      expect(last_response.body).to include('English')
-      expect(last_response.body).to include('Sean Floyd')
-      expect(last_response.body).to include('https://github.com/SeanLF')
-      expect(last_response.body).to include('formation')
-      expect(last_response.body).to include('expérience')
+      expect(last_response.body).to(include('English'))
+      expect(last_response.body).to(include('Sean Floyd'))
+      expect(last_response.body).to(include('https://github.com/SeanLF'))
+      expect(last_response.body).to(include('formation'))
+      expect(last_response.body).to(include('expérience'))
     end
   end
 
@@ -62,10 +62,10 @@ describe App do
     it 'displays the emergency page' do
       get '/emergency'
 
-      expect(last_response.body).to include('In Case of Emergency')
-      expect(last_response.body).to include('Contacts')
-      expect(last_response.body).to include('Father')
-      expect(last_response.body).to include('Mother')
+      expect(last_response.body).to(include('In Case of Emergency'))
+      expect(last_response.body).to(include('Contacts'))
+      expect(last_response.body).to(include('Father'))
+      expect(last_response.body).to(include('Mother'))
     end
   end
 
@@ -73,9 +73,9 @@ describe App do
     it 'triggers a mailto: event' do
       get '/email'
 
-      expect(last_response.location).to include('mailto:')
-      expect(last_response.location).to include('@')
-      expect(last_response.location).to include('.com')
+      expect(last_response.location).to(include('mailto:'))
+      expect(last_response.location).to(include('@'))
+      expect(last_response.location).to(include('.com'))
     end
   end
 
@@ -83,11 +83,11 @@ describe App do
     it 'redirects to 404' do
       get '/doesnotexist'
 
-      expect(last_response.status).to eq(302)
+      expect(last_response.status).to(eq(302))
 
       get last_response.location
 
-      expect(last_response.body).to include('404')
+      expect(last_response.body).to(include('404'))
     end
   end
 
@@ -95,24 +95,24 @@ describe App do
     it 'displays the make CV page' do
       get '/cv/make'
 
-      expect(last_response.body).to include('Make your own version of my CV')
+      expect(last_response.body).to(include('Make your own version of my CV'))
     end
 
     it 'redirects if no file is submitted' do
       post '/cv/make'
 
-      expect(last_response.status).to eq(302)
-      expect(last_response.location).to include('/cv/make')
+      expect(last_response.status).to(eq(302))
+      expect(last_response.location).to(include('/cv/make'))
     end
 
     it 'creates the CV from the JSON file' do
       post '/cv/make', json_file: { tempfile: 'views/cv/fr.cv.json' }
 
-      expect(last_response.body).to_not include('<nav>')
-      expect(last_response.body).to include('Sean Floyd')
-      expect(last_response.body).to include('https://github.com/SeanLF')
-      expect(last_response.body).to include('formation')
-      expect(last_response.body).to include('expérience')
+      expect(last_response.body).to_not(include('<nav>'))
+      expect(last_response.body).to(include('Sean Floyd'))
+      expect(last_response.body).to(include('https://github.com/SeanLF'))
+      expect(last_response.body).to(include('formation'))
+      expect(last_response.body).to(include('expérience'))
     end
   end
 
@@ -121,8 +121,8 @@ describe App do
       it 'redirects to calendly' do
         get '/availability'
 
-        expect(last_response.status).to eq(302)
-        expect(last_response.location).to include('https://calendly.com/seanlf')
+        expect(last_response.status).to(eq(302))
+        expect(last_response.location).to(include('https://calendly.com/seanlf'))
       end
     end
 
@@ -130,8 +130,8 @@ describe App do
       it 'redirects to calendly' do
         get '/disponibilite'
 
-        expect(last_response.status).to eq(302)
-        expect(last_response.location).to include('https://calendly.com/seanlf')
+        expect(last_response.status).to(eq(302))
+        expect(last_response.location).to(include('https://calendly.com/seanlf'))
       end
     end
   end
@@ -140,7 +140,7 @@ describe App do
     it 'succeeds' do
       get '/check'
 
-      expect(last_response.body).to include('itworks')
+      expect(last_response.body).to(include('itworks'))
     end
   end
 end

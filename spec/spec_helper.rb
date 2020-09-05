@@ -9,5 +9,5 @@ Bundler.require(:default, :test)
 require File.expand_path('../app.rb', __dir__)
 
 RSpec.configure do |conf|
-  conf.include Rack::Test::Methods
+  conf.include(Rack::Test::Methods)
 end

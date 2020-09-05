@@ -16,7 +16,7 @@ module DateHelper
   end
 
   def format_date_ymd(date)
-    date = parse_date(date) if date.is_a? String
+    date = parse_date(date) if date.is_a?(String)
     date.strftime('%Y-%m-%d')
   end
 
@@ -35,8 +35,8 @@ module DateHelper
   private
 
   def date_diff(start_date, end_date)
-    start_date = parse_date(start_date) if start_date.is_a? String
-    end_date = parse_date(end_date) if end_date.is_a? String
+    start_date = parse_date(start_date) if start_date.is_a?(String)
+    end_date = parse_date(end_date) if end_date.is_a?(String)
     end_date - start_date
   end
 end

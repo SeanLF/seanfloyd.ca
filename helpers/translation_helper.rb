@@ -17,7 +17,7 @@ module TranslationHelper
     years, months = years_months
     how_long = [
       years.positive? ? R18n.t.cv.time.year.count(years) : nil,
-      months.positive? ? R18n.t.cv.time.month.count(months) : nil
+      months.positive? ? R18n.t.cv.time.month.count(months) : nil,
     ]
     how_long.compact.join(', ')
   end

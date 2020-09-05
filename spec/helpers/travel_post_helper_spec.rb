@@ -13,7 +13,7 @@ describe TravelPostHelper do
       '',
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem accusamus, sequi delectus quia sit',
       'officia quod repellendus omnis placeat. Aut ex voluptas exercitationem iusto esse dolore. Accusantium facere',
-      'temporibus sunt.'
+      'temporibus sunt.',
     ]
   end
   let(:sample_post_excerpt) { sample_post[2][0, 100] + '...' }
@@ -22,7 +22,7 @@ describe TravelPostHelper do
     context 'when using sample data' do
       subject { travel_post_title(sample_post) }
 
-      it { is_expected.to eq(sample_post_title) }
+      it { is_expected.to(eq(sample_post_title)) }
     end
   end
 
@@ -30,7 +30,7 @@ describe TravelPostHelper do
     context 'when using sample data' do
       subject { travel_post_excerpt(sample_post) }
 
-      it { is_expected.to eq(sample_post_excerpt) }
+      it { is_expected.to(eq(sample_post_excerpt)) }
     end
   end
 
@@ -38,7 +38,7 @@ describe TravelPostHelper do
     context 'when using sample data' do
       subject { travel_post_url(sample_post_date) }
 
-      it { is_expected.to eq(sample_post_url) }
+      it { is_expected.to(eq(sample_post_url)) }
     end
   end
 
@@ -46,7 +46,7 @@ describe TravelPostHelper do
     context 'when using sample data' do
       subject { travel_post_date(sample_post_filename) }
 
-      it { is_expected.to eq(sample_post_date) }
+      it { is_expected.to(eq(sample_post_date)) }
     end
   end
 end

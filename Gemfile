@@ -19,6 +19,7 @@ end
 group :development, :test do
   # code style
   gem 'rubocop'
+  gem 'rubocop-shopify'
   # testing framework
   gem 'rack-test'
   gem 'rspec'
