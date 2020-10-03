@@ -24,14 +24,14 @@ services:
     <<: *app
     command: /bin/bash
     ports:
-      - "9292:9292"
+      - "3000:9292"
       - "3002:3002"
 
   sinatra:
     <<: *app
     command: bundle exec rackup config.ru -o 0.0.0.0
     ports:
-      - "9292:9292"
+      - "3000:9292"
 
 volumes:
   bundle:
