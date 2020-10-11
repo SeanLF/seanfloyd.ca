@@ -9,7 +9,7 @@
     ],
     "email": "seanfloyd@icloud.com",
     "phone": "+33 (0)7 66 44 70 46",
-    "website": "https://seanfloyd.ca",
+    "website": "https://seanfloyd.dev",
     "availability": "https://calendly.com/seanlf",
     "location": {
       "address": "302-287 MacLaren Street",
@@ -67,7 +67,7 @@
     {
       "company": "Blog",
       "position": "Tour du monde en solo",
-      "website": "https://seanfloyd.ca/travel",
+      "website": "https://seanfloyd.dev/travel",
       "startDate": "2019-06-12",
       "endDate": "2020-03-19"
     },
@@ -298,7 +298,7 @@
     {
       "name": "Site personnel",
       "position": "Créateur",
-      "website": "https://seanfloyd.ca",
+      "website": "https://seanfloyd.dev",
       "summary": "",
       "highlights": [],
       "keywords": [

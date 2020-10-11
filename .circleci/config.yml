@@ -4,11 +4,11 @@ orbs:
 executors:
   ruby:
     docker:
-      - image: 'circleci/ruby:2.7.1'
+      - image: "circleci/ruby:2.7.1"
 jobs:
   build:
     executor: ruby
-    working_directory: ~/seanfloyd.ca
+    working_directory: ~/seanfloyd.dev
     steps:
       - checkout
   test:
@@ -50,8 +50,8 @@ jobs:
       - run:
           name: Deploy to Dokku
           command: |
-            ssh-keyscan -H seanfloyd.ca >> ~/.ssh/known_hosts
-            git remote add dokku dokku@seanfloyd.ca:seanfloyd.ca
+            ssh-keyscan -H seanfloyd.dev >> ~/.ssh/known_hosts
+            git remote add dokku dokku@seanfloyd.dev:seanfloyd.dev
             git push -f dokku master
 workflows:
   version: 2

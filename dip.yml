@@ -7,7 +7,7 @@ environment:
 compose:
   files:
     - docker-compose.yml
-  project_name: seanfloyd.ca
+  project_name: seanfloyd.dev
 
 interaction:
   bash:
