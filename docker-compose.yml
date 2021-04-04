@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        RUBY_VERSION: "2.7.1"
-        BUNDLER_VERSION: "2.1.4"
+        RUBY_VERSION: "3.0.0"
+        BUNDLER_VERSION: "2.2"
     image: seanfloydca:1.0.0
     tmpfs:
       - /tmp
