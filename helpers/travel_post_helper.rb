@@ -3,12 +3,12 @@
 # Module to parse travel posts
 module TravelPostHelper
   def travel_post_title(content)
-    content[0].delete_prefix('#').strip
+    content[0].delete_prefix("#").strip
   end
 
   def travel_post_excerpt(content)
     content.drop(1).each do |line|
-      return line[0, 100].strip + '...' unless line.to_s.gsub(/^===/, '').strip.empty?
+      return line[0, 100].strip + "..." unless line.to_s.gsub(/^===/, "").strip.empty?
     end
     nil
   end

@@ -8,7 +8,7 @@ module DateHelper
   MONTHS_IN_YEAR = 12
 
   def parse_date(date)
-    if date == 'now'
+    if date == "now"
       Date.today
     else
       Date.parse(date)
@@ -17,7 +17,7 @@ module DateHelper
 
   def format_date_ymd(date)
     date = parse_date(date) if date.is_a?(String)
-    date.strftime('%Y-%m-%d')
+    date.strftime("%Y-%m-%d")
   end
 
   ##

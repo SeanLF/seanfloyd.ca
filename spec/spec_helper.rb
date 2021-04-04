@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require 'simplecov'
+require "simplecov"
 SimpleCov.start
 
-require 'bundler'
+require "bundler"
 Bundler.require(:default, :test)
 
-require File.expand_path('../app.rb', __dir__)
+require File.expand_path("../app.rb", __dir__)
 
 RSpec.configure do |conf|
   conf.include(Rack::Test::Methods)

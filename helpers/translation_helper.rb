@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'sinatra/r18n'
+require "sinatra/r18n"
 
 module TranslationHelper
   include R18n::Helpers
@@ -9,7 +9,7 @@ module TranslationHelper
     if date == Date.today
       R18n.t.cv.time.now
     else
-      R18n.l(date, '%b %Y')
+      R18n.l(date, "%b %Y")
     end
   end
 
@@ -19,7 +19,7 @@ module TranslationHelper
       years.positive? ? R18n.t.cv.time.year.count(years) : nil,
       months.positive? ? R18n.t.cv.time.month.count(months) : nil,
     ]
-    how_long.compact.join(', ')
+    how_long.compact.join(", ")
   end
 
   def format_date_mdy_ordinalize(date)

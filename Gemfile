@@ -1,31 +1,31 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '3.0.0'
+ruby "3.0.0"
 
-gem 'activesupport'
-gem 'builder'
-gem 'kramdown'
-gem 'rack-cache'
-gem 'sinatra'
-gem 'sinatra-r18n'
-gem 'thin'
+gem "activesupport"
+gem "builder"
+gem "kramdown"
+gem "rack-cache"
+gem "sinatra"
+gem "sinatra-r18n"
+gem "thin"
 
 group :development do
-  gem 'byebug'
+  gem "byebug"
 end
 
 group :development, :test do
   # code style
-  gem 'rubocop'
-  gem 'rubocop-shopify'
+  gem "rubocop"
+  gem "rubocop-shopify"
   # testing framework
-  gem 'rack-test'
-  gem 'rspec'
-  gem 'simplecov', '< 0.18'
+  gem "rack-test"
+  gem "rspec"
+  gem "simplecov", "< 0.18"
 end
 
 group :test do
-  gem 'rspec_junit_formatter'
+  gem "rspec_junit_formatter"
 end
