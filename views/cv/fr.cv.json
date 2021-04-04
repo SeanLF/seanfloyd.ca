@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Sean Floyd",
-    "label": "Software Engineer & Data Scientist. ~2 ans d'expérience, anglais bilingue.",
+    "label": "Software Engineer & Data Scientist. 2,5 ans d'expérience, anglais bilingue.",
     "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
     "citizenship": [
       "française",
@@ -12,11 +12,8 @@
     "website": "https://seanfloyd.dev",
     "availability": "https://calendly.com/seanlf",
     "location": {
-      "address": "302-287 MacLaren Street",
-      "postalCode": "K2P 0L9",
-      "city": "Ottawa",
-      "region": "Ontario",
-      "countryCode": "CA"
+      "city": "Paris",
+      "countryCode": "FR"
     },
     "profiles": [
       {
@@ -39,14 +36,15 @@
   "work": [
     {
       "company": "Hivebrite",
-      "position": "Back-End Engineer",
+      "position": "Software Engineer",
       "website": "https://hivebrite.com",
       "startDate": "2020-08-03",
       "endDate": "now",
+      "summary": "Améliorer les fonctionnalités et la stabilité du back-end.",
       "highlights": [
-        "Améliorer les fonctionnalités et la stabilité du back-end",
-        "Développer des intégrations avec des logiciels tiers (Webhooks, API, intégrations profondes)",
-        "Concevoir, développer, tester et mettre en œuvre les nouvelles caractéristiques des produits"
+        "Développer des intégrations avec des logiciels tiers en utilisant des Webhooks et des API (Recurly, MailChimp).",
+        "Concevoir, développer, tester et mettre en œuvre de nouvelles fonctionnalités de produits : événements, dons, paiements, facturation.",
+        "Amélioration des performances des jobs d'arrière-plan et refonte de nos index Elasticsearch."
       ],
       "keywords": [
         "Ruby",

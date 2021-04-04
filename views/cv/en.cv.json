@@ -1,23 +1,19 @@
 {
   "basics": {
     "name": "Sean Floyd",
-    "label": "Software Engineer, 2 years of experience, 2 publications, french bilingual",
+    "label": "Software Engineer, 2.5 years of experience, 2 publications, french bilingual",
     "picture": "https://i.stack.imgur.com/jbE4Z.jpg",
     "citizenship": [
       "Canadian",
       "French"
     ],
     "email": "seanfloyd@icloud.com",
-    "phone": "+1 (343) 882-4123",
-    "altPhone": "+33 (0)7 66 44 70 46",
+    "phone": "+33 (0)7 66 44 70 46",
     "website": "https://seanfloyd.dev",
     "availability": "https://calendly.com/seanlf",
     "location": {
-      "address": "302-287 MacLaren Street",
-      "postalCode": "K2P 0L9",
-      "city": "Ottawa",
-      "region": "Ontario",
-      "countryCode": "CA"
+      "city": "Paris",
+      "countryCode": "FR"
     },
     "profiles": [
       {
@@ -40,14 +36,15 @@
   "work": [
     {
       "company": "Hivebrite",
-      "position": "Back-End Engineer",
+      "position": "Software Engineer",
       "website": "https://hivebrite.com",
       "startDate": "2020-08-03",
       "endDate": "now",
+      "summary": "Improve back-end features and stability.",
       "highlights": [
-        "Improve back-end features and stability",
-        "Develop integrations with 3rd party software (Webhooks, API, deep integrations)",
-        "Design, develop, test and implement new product features"
+        "Develop integrations with 3rd party software using Webhooks and APIs (Recurly, MailChimp).",
+        "Design, develop, test and implement new product features to the core modules of the platform: events, donations, payments, billing.",
+        "Improved the performance of background jobs and reworking our Elasticsearch indexes."
       ],
       "keywords": [
         "Ruby",
