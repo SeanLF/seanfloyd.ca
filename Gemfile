@@ -9,7 +9,7 @@ gem "builder"
 gem "kramdown"
 gem "rack-cache"
 gem "sinatra"
-gem "sinatra-r18n"
+gem "sinatra-r18n", "~> 4"
 gem "thin"
 
 group :development do
@@ -23,7 +23,8 @@ group :development, :test do
   # testing framework
   gem "rack-test"
   gem "rspec"
-  gem "simplecov", "< 0.18"
+  gem "simplecov"
+  gem "byebug"
 end
 
 group :test do
