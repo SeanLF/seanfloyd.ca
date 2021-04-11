@@ -235,7 +235,7 @@
       "name": "Clone de Tinder + système d'apprentissage automatique",
       "position": "Creator",
       "website": "https://github.com/SeanLF/tinder-swipe-learner",
-      "summary": "Création d'un clone de Tinder employant la librarie ci-dessous. Mon objectif est de créer mon propre système de recommendation.",
+      "summary": "Création d'un clone de Tinder employant la librairie ci-dessous. Mon objectif est de créer mon propre système de recommendation.",
       "highlights": [],
       "keywords": [
         "Vue.js",
